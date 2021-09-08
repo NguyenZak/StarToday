@@ -4693,7 +4693,7 @@ textarea.form-control-lg {
     display: flex !important;
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
-        justify-content: flex-start;
+        flex-direction: column;
   }
   .navbar-expand-lg .navbar-toggler {
     display: none;

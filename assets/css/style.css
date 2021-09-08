@@ -8179,7 +8179,7 @@ textarea.form-control-lg {
 }
 
 .ms-auto {
-  margin-left: auto !important;
+  margin-left: 0 !important;
 }
 
 .m-n1 {
@@ -14443,7 +14443,7 @@ header .navbar-nav .nav-link.active:before {
   padding-bottom: 14px;
 }
 .navbar-sticky-on .navbar-brand .navbar-brand-item {
-  height: 22px;
+  height: 45px;
 }
 
 @-webkit-keyframes fadeInDown {
@@ -14519,7 +14519,7 @@ header .navbar-nav .nav-link.active:before {
     padding-bottom: 20px;
   }
   .navbar-brand .navbar-brand-item {
-    height: 22px;
+    height: 45px;
   }
 }
 .navbar .container-fluid .dropdown-fullwidth .dropdown-menu, .navbar .container-sm .dropdown-fullwidth .dropdown-menu, .navbar .container-md .dropdown-fullwidth .dropdown-menu, .navbar .container-lg .dropdown-fullwidth .dropdown-menu, .navbar .container-xl .dropdown-fullwidth .dropdown-menu, .navbar .container-xxl .dropdown-fullwidth .dropdown-menu {

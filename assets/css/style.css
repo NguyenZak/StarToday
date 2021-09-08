@@ -420,6 +420,7 @@ legend + * {
 ::-webkit-datetime-edit-minute,
 ::-webkit-datetime-edit-hour-field,
 ::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-month-field,
 ::-webkit-datetime-edit-year-field {
   padding: 0;
 }
@@ -3501,13 +3502,13 @@ textarea.form-control-lg {
 
 .btn-danger {
   color: #fff;
-  background-color: #0e67aa;
-  border-color: #0e67aa;
+  background-color: #d6293e;
+  border-color: #d6293e;
 }
 .btn-danger:hover {
   color: #fff;
-  background-color: #12cc3a;
-  border-color: #12cc3a;
+  background-color: #b62335;
+  border-color: #ab2132;
 }
 .btn-check:focus + .btn-danger, .btn-danger:focus {
   color: #fff;
@@ -4438,8 +4439,8 @@ textarea.form-control-lg {
           justify-content: space-between;
 }
 .navbar-brand {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   margin-right: 1rem;
   font-size: 1.25rem;
   white-space: nowrap;
@@ -4693,7 +4694,6 @@ textarea.form-control-lg {
     display: flex !important;
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
-        flex-direction: column;
   }
   .navbar-expand-lg .navbar-toggler {
     display: none;
@@ -8031,8 +8031,8 @@ textarea.form-control-lg {
 }
 
 .mx-auto {
-  margin-right: 0 !important;
-  margin-left: 0 !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
 }
 
 .my-0 {
@@ -8046,8 +8046,8 @@ textarea.form-control-lg {
 }
 
 .my-2 {
-  margin-top: 0.3rem !important;
-  margin-bottom: 0.3rem !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
 }
 
 .my-3 {
@@ -14073,7 +14073,7 @@ textarea.form-control-lg {
 }
 
 .dropdown-item {
-  font-weight: 700;
+  font-weight: 400;
   text-transform: capitalize;
   position: relative;
 }
@@ -14383,7 +14383,7 @@ textarea.form-control-lg {
 
 .navbar-nav .nav-link {
   font-size: 0.9375rem;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: capitalize;
   line-height: 50px;
   padding-top: 0;
@@ -14519,7 +14519,7 @@ header .navbar-nav .nav-link.active:before {
     padding-bottom: 20px;
   }
   .navbar-brand .navbar-brand-item {
-    height: 30px;
+    height: 22px;
   }
 }
 .navbar .container-fluid .dropdown-fullwidth .dropdown-menu, .navbar .container-sm .dropdown-fullwidth .dropdown-menu, .navbar .container-md .dropdown-fullwidth .dropdown-menu, .navbar .container-lg .dropdown-fullwidth .dropdown-menu, .navbar .container-xl .dropdown-fullwidth .dropdown-menu, .navbar .container-xxl .dropdown-fullwidth .dropdown-menu {
@@ -14625,7 +14625,7 @@ header .navbar-nav .nav-link.active:before {
   }
 
   .navbar-expand-xl .navbar-nav .nav-item > .dropdown-menu {
-    background: rgba(65, 67, 73, 0.04);
+    background: rgba(89, 93, 105, 0.04);
     padding: 20px 0px;
     margin: 10px 0;
   }

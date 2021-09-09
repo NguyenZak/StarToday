@@ -13883,7 +13883,7 @@ textarea.form-control-lg {
   will-change: transform;
 }
 
-.card .card-element-hover {
+.card .card-element-hover
   visibility: hidden;
   margin-top: 30px;
   opacity: 0;
@@ -14016,15 +14016,15 @@ textarea.form-control-lg {
   }
 }
 .card-grid .card-grid-lg {
-  height: 560px;
+  height: 690px;
 }
 .card-grid .card-grid-sm {
-  height: calc(280px - calc(var(--bs-gutter-y) / 2));
+  height: calc(345px - calc(var(--bs-gutter-y) / 2));
 }
 
 @media (max-width: 767.98px) {
   .card-grid .card-grid-lg {
-    height: 400px;
+    height: 600px;
   }
 }
 .card-fold {

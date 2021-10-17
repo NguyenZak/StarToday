@@ -1,2 +1,0 @@
-# StarToday
-trang html startoday

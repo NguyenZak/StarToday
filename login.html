@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<title>Tạp Chí Ngôi Sao Star Today</title>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Startoday.com">
+	<meta name="description" content="Trang thông tin giải trí">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.svg">
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/tiny-slider/tiny-slider.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/plyr/plyr.css">
+
+	<!-- Theme CSS -->
+	<link id="style-switch" rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ4W34ZJ0L"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-XZ4W34ZJ0L');
+	</script>
+
+</head>
+
+<body>
+
+	<!-- Top alert START -->
+	<div
+		class="alert alert-warning py-2 m-0 bg-dark-overlay-3 border-0 rounded-0 alert-dismissible fade show text-center overflow-hidden"
+		role="alert">
+	
+		<div class="position-relative">
+			<!-- <p class="text-white m-0">Unlimited download! Starting from just $15/m <a href="#"
+					class="btn btn-xs btn-dark ms-3 mb-0">Grab now!</a></p> -->
+			<img src="https://st-raovat.vnecdn.net/v7/images/banner/Raovat_1100x110_080421.gif" frameborder="0"
+				width="100%"></img>
+		</div>
+		<!-- Close button -->
+		<button type="button" class="btn-close btn-close-white opacity-9 p-3" data-bs-dismiss="alert"
+			aria-label="Close"></button>
+	</div>
+	<!-- Top alert END -->
+	<!-- =======================
+Header START -->
+	<header class="navbar-light navbar-sticky header-static">
+
+		<div class="navbar-top d-none d-lg-block small">
+			<div class="container">
+				<div class="d-md-flex justify-content-between align-items-center my-2">
+					<!-- Top bar left -->
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="nav-link" href="login.html">Login / Join</a>
+						</li>
+						<li class="nav-item">
+							<a id="time" class="nav-link"></a>
+						</li>
+					</ul>
+
+					<!-- Top bar right -->
+					<div class="d-flex align-items-center">
+						<!-- Dark mode switch -->
+						<!-- <div class="modeswitch" id="darkModeSwitch">
+							<div class="switch"></div>
+						</div> -->
+
+						<ul class="nav">
+							<li class="nav-item">
+								<a class="nav-link px-2 fs-5" href="#"><i class="fab fa-facebook-square"></i></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link px-2 fs-5" href="#"><i class="fab fa-twitter-square"></i></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link px-2 fs-5" href="#"><i class="fab fa-linkedin"></i></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link px-2 fs-5" href="#"><i class="fab fa-youtube-square"></i></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link ps-2 pe-0 fs-5" href="#"><i class="fab fa-instagram-square"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- Divider -->
+				<div class="border-bottom border-2 border-primary opacity-1"></div>
+			</div>
+		</div>
+
+
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container">
+				<!-- Logo START -->
+
+				<!-- Logo END -->
+
+				<!-- Responsive navbar Canvas -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+					aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="text-body h6 d-none d-sm-inline-block"></span>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Main navbar START -->
+				<a class="navbar-brand mx-0" href="index.html">
+					<img class="navbar-brand-item light-mode-item" src="assets/images/logo.svg" alt="logo">
+					<!-- <img class="navbar-brand-item dark-mode-item" src="assets/images/logo-light.svg" alt="logo"> -->
+				</a>
+
+				<div class="offcanvas offcanvas-start-lg" tabindex="-1" id="offcanvasExample"
+					aria-labelledby="offcanvasExampleLabel">
+					<div class="offcanvas-header justify-content-end">
+						<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-header d-flex d-lg-none">
+						<img class="light-mode-item" src="assets/images/logo.svg" alt="logo">
+						<img class="dark-mode-item my-3" src="assets/images/logo-light.svg" alt="logo">
+
+						</a>
+					</div>
+					<div class="offcanvas-body p-lg-0">
+						<ul class="navbar-nav navbar-nav-scroll mx-auto">
+
+							<!-- Nav item 1 -->
+							<li class="nav-item dropdown">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+
+							<!-- Nav item 2 -->
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="categories-thethao.html">Thể thao</a>
+								<ul class="dropdown-menu">
+									<!-- dropdown submenu -->
+									<li><a class="dropdown-item" href="categories-thethao.html">Bóng đá</a> </li>
+									<li> <a class="dropdown-item" href="categories-thethao.html">Lịch thi đấu</a> </li>
+									<li> <a class="dropdown-item" href="post-list.html">Tường thuật</a> </li>
+									<li> <a class="dropdown-item" href="post-list-2.html">Bundesliga</a> </li>
+									<li> <a class="dropdown-item" href="post-cards.html">Champion League</a> </li>
+									<li> <a class="dropdown-item" href="post-overlay.html">LaLiga</a> </li>
+									<li class="dropdown-divider"></li>
+									<li class="dropdown-submenu dropend">
+										<a class="dropdown-item dropdown-toggle" href="#">Môn thể thao khác</a>
+									</li>
+								</ul>
+							</li>
+
+							<!-- Nav item 3 -->
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="categorises-giaitri.html">Giải trí</a>
+								<ul class="dropdown-menu" aria-labelledby="postMenu">
+									<!-- dropdown submenu -->
+									<li> <a class="dropdown-item" href="post-list.html">Sao</a> </li>
+									<li> <a class="dropdown-item" href="post-list.html">Video</a> </li>
+									<li> <a class="dropdown-item" href="post-list-2.html">Phim</a> </li>
+									<li> <a class="dropdown-item" href="post-cards.html">Nhạc</a> </li>
+									<li> <a class="dropdown-item" href="post-overlay.html">Thời trang</a> </li>
+									<li> <a class="dropdown-item" href="post-overlay.html">Làm đẹp</a> </li>
+								</ul>
+							</li>
+
+							<!-- Nav item 4 -->
+							<li class="nav-item dropdown dropdown-fullwidth">
+								<a class="nav-link" href="#">Doanh nhân</a>
+							</li>
+
+							<!-- Nav item 5 -->
+							<li class="nav-item dropdown dropdown-fullwidth">
+								<a class="nav-link" href="#">Chính khách</a>
+							</li>
+
+							<!-- Nav item 6 -->
+							<li class="nav-item dropdown dropdown-fullwidth">
+								<a class="nav-link" href="#">Du lịch</a>
+							</li>
+
+							<!-- Nav item 7 -->
+							<li class="nav-item dropdown dropdown-fullwidth">
+								<a class="nav-link" href="#">Video</a>
+							</li>
+
+							<!-- Nav item 8 -->
+							<li class="nav-item dropdown dropdown-fullwidth">
+								<a class="nav-link" href="#">Đời sống</a>
+							</li>
+
+							<!-- Nav item 9 -->
+							<li class="nav-item dropdown dropdown-fullwidth">
+								<a class="nav-link" href="#">Ẩm thực</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Main navbar END -->
+
+				<!-- Nav right START -->
+				<div class="nav flex-nowrap align-items-end">
+					<!-- Nav Button -->
+					<div class="nav-item mx-0">
+						<a href="login.html" class="nav-link btn btn-sm mb-0 mx-0"><i class="fa fa-user fs-5"></i></a>
+					</div>
+					<!-- Nav Search -->
+					<div class="nav-item dropdown dropdown-toggle-icon-none nav-search d-none d-md-block">
+						<a class="nav-link dropdown-toggle" role="button" href="#" id="navSearch" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							<i class="bi bi-search fs-5"> </i>
+						</a>
+						<div class="dropdown-menu dropdown-menu-end shadow rounded p-2" aria-labelledby="navSearch">
+							<form class="rounded position-relative">
+								<input class="form-control pe-5 bg-light" type="search" placeholder="Search the blog"
+									aria-label="Search">
+								<button class="btn bg-transparent px-2 py-0 position-absolute top-50 end-0 translate-middle-y"
+									type="submit"><i class="bi bi-search fs-5"> </i></button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- Nav right END -->
+
+			</div>
+		</nav>
+		<!-- Logo Nav END -->
+	</header>
+	<!-- =======================
+Header END -->
+
+	<!-- **************** MAIN CONTENT START **************** -->
+	<main>
+
+		<!-- =======================
+	Inner intro START -->
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-lg-8 col-xl-6 mx-auto">
+						<div class="p-4 p-sm-5 bg-primary-soft rounded">
+							<ul class="nav nav-tabs nav-justified">
+								<li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab-login"> Đăng nhập </a>
+								</li>
+								<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-register"> Đăng ký </a> </li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane show active" id="tab-login">
+									<h2 class="text-center">Đăng nhập</h2>
+									<!-- Form START -->
+									<form class="mt-4">
+										<!-- Email -->
+										<div class="mb-3">
+											<label class="form-label" for="exampleInputEmail1">E-mail</label>
+											<input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">
+										</div>
+										<!-- Password -->
+										<div class="mb-3">
+											<label class="form-label" for="exampleInputPassword1">Mật khẩu</label>
+											<input type="password" class="form-control" id="exampleInputPassword1" placeholder="*********">
+										</div>
+										<!-- Checkbox -->
+										<div class="mb-3 form-check">
+											<input type="checkbox" class="form-check-input" id="exampleCheck1">
+											<label class="form-check-label" for="exampleCheck1">Nhớ mật khẩu</label>
+										</div>
+										<!-- Button -->
+										<div class="row align-items-center">
+											<div class="col-sm-12">
+												<button type="submit" class="btn btn-success w-100">Đăng nhập</button>
+											</div>
+	
+										</div>
+									</form>
+									<!-- Form END -->
+									<hr>
+									<!-- Social-media btn -->
+									<div class="text-center">
+										<ul class="list-unstyled d-sm-flex mt-3 justify-content-center">
+											<li class="mx-2">
+												<a href="#" class="btn bg-facebook d-inline-block w-100"><i
+														class="fab fa-facebook-f me-2"></i>Đăng nhập với Facebook</a>
+											</li>
+											<li class="mx-2">
+												<a href="#" class="btn bg-google d-inline-block w-100"><i class="fab fa-google me-2"></i>Đăng
+													nhập với Google</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab-register">
+									<h2 class="text-center">Đăng ký</h2>
+									<!-- Form START -->
+									<form class="mt-4">
+										<!-- Email -->
+										<div class="mb-3">
+											<label class="form-label" for="exampleInputEmail1">E-mail</label>
+											<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+												placeholder="E-mail">
+											<small id="emailHelp" class="form-text">Chúng tôi sẽ không bao giờ chia sẻ email của bạn với bất
+												kỳ ai khác.</small>
+										</div>
+										<!-- Password -->
+										<div class="mb-3">
+											<label class="form-label" for="exampleInputPassword1">Mật khẩu</label>
+											<input type="password" class="form-control" id="exampleInputPassword1" placeholder="*********">
+										</div>
+										<!-- Password -->
+										<div class="mb-3">
+											<label class="form-label" for="exampleInputPassword2">Nhập lại mật khẩu</label>
+											<input type="password" class="form-control" id="exampleInputPassword2" placeholder="*********">
+										</div>
+										<!-- Checkbox -->
+										<div class="mb-3 form-check">
+											<input type="checkbox" class="form-check-input" id="exampleCheck1">
+											<label class="form-check-label" for="exampleCheck1">Đồng ý với điều khoản và dịch vụ</label>
+										</div>
+										<!-- Button -->
+										<div class="row align-items-center">
+											<div class="col-sm-12">
+												<button type="submit" class="btn btn-success w-100">Đăng ký</button>
+											</div>
+										</div>
+									</form>
+									<!-- Form END -->
+									<hr>
+									<!-- Social-media btn -->
+									<div class="text-center">
+										<ul class="list-unstyled d-sm-flex mt-3 justify-content-center">
+											<li class="mx-2">
+												<a href="#" class="btn bg-facebook d-inline-block w-100"><i
+														class="fab fa-facebook-f me-2"></i>Đăng nhập với Facebook</a>
+											</li>
+											<li class="mx-2">
+												<a href="#" class="btn bg-google d-inline-block w-100"><i class="fab fa-google me-2"></i>Đăng
+													nhập với Google</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+	
+	
+	
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- =======================
+	Inner intro END -->
+	
+	</main>
+	<!-- **************** MAIN CONTENT END **************** -->
+	<div class="container">
+		<div class="border-bottom border-primary border-2 opacity-1"></div>
+	</div>
+	<!-- =======================
+Footer START -->
+	<footer class="bg-white pt-1">
+		<div class="container">
+			<!-- Divider -->
+			<!-- Widgets START -->
+			<div class="row pt-3">
+				<!-- Footer Widget -->
+				<div class="col-md-6 col-lg-3 border-bottom d-none d-sm-inline-block">
+					<div class="row">
+						<div class="col-6 border-right border-left">
+							<ul class="nav flex-column">
+								<li class="nav-item"><a class="nav-link pt-0" href="#"><i class="fa fa-home fa-fw me-2"></i>Trang
+										chủ</a></li>
+								<li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-video fa-fw me-2"></i>Video</a></li>
+								<li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-camera fa-fw me-2"></i>Ảnh</a></li>
+								<li class="nav-item"><a class="nav-link" href="#"><i class="far fa-newspaper fa-fw me-2"></i>Mới
+										nhất</a></li>
+							</ul>
+						</div>
+						<div class="col-6 border-right">
+							<ul class="nav flex-column">
+								<li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-eye fa-fw me-2"></i>Xem nhiều</a>
+								</li>
+								<li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-fire fa-fw me-2"></i>Tin nóng</a>
+								</li>
+								<li class="nav-item"><a class="nav-link pt-0" href="#"> <i class="fa fa-newspaper fa-fw me-2"></i>Thời
+										sự</a></li>
+								<li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-binoculars fa-fw me-2"></i>Góc
+										nhìn</a></li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 border-bottom d-none d-sm-inline-block">
+					<div class="row">
+						<div class="col-6 border-right">
+							<ul class="nav flex-column">
+								<li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-globe fa-fw me-2"></i>Thế giới</a>
+								</li>
+								<li class="nav-item"><a class="nav-link" href="#"><i class="far fa-chart-bar fa-fw me-2"></i>Kinh
+										doanh</a></li>
+								<li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-laugh fa-fw me-2"></i>Giải trí</a>
+								</li>
+								<li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-vest-patches fa-fw me-2"></i>Thời
+										trang</a></li>
+							</ul>
+						</div>
+						<div class="col-6 border-right d-none d-sm-inline-block">
+							<ul class="nav flex-column">
+								<li class="nav-item"><a class="nav-link pt-0" href="#"><i class="far fa-futbol fa-fw me-2"></i>Thể
+										thao</a></li>
+								<li class="nav-item"><a class="nav-link pt-0" href="#"><i class="fa fa-user-tie fa-fw me-2"></i>Doanh
+										nhân</a></li>
+								<li class="nav-item"><a class="nav-link pt-0" href="#"><i class="fa fa-user-tie fa-fw me-2"></i>Chính
+										khách</a></li>
+								<li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-balance-scale fa-fw me-2"></i>Pháp
+										luật</a></li>
+						</div>
+					</div>
+				</div>
+				<!-- Footer Widget -->
+				<div class="col-md-6 col-lg-3 border-bottom d-none d-sm-inline-block">
+					<div class="row">
+						<div class="col-6 border-right">
+							<ul class="nav flex-column">
+								<li class="nav-item"><a class="nav-link" href="#"><i
+											class="bi bi-chat-square-quote-fill fa-fw me-2"></i> Tâm sự</a></li>
+								<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-heart fa-fw me-2"></i>Đời sống</a>
+								</li>
+								<li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-suitcase-rolling fa-fw me-2"></i>Du
+										lịch</a></li>
+								<li class="nav-item"><a class="nav-link" href="#"><i
+											class="fas fa-headphones-alt fa-fw me-2"></i>Podcasts</a></li>
+							</ul>
+						</div>
+						<div class="col-6 border-right d-none d-sm-inline-block">
+							<ul class="nav flex-column">
+								<li class="nav-item"><a class="nav-link pt-0" href="#"><i
+											class="fab fa-facebook fa-fw me-2"></i>Facebook</a></li>
+								<li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-youtube fa-fw me-2"></i>YouTube</a>
+								</li>
+								<li class="nav-item"><a class="nav-link" href="#"><i class="far fa-bell fa-fw me-2"></i>Thông báo</a>
+								</li>
+								<li class="nav-item"><a class="nav-link" href="#"><i class="far fa-envelope fa-fw me-2"></i>Phản hồi</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- Footer Widget -->
+				<div class="col-sm-6 col-lg-3 text-center">
+					<h5 class="text-black">Tải ứng dụng</h5>
+					<p>Tải ứng dụng đọc báo: Startoday</p>
+					<div class="row g-2">
+						<div class="col">
+							<a href="#"><img class="w-75" src="assets/images/app-store.svg" alt="app-store"></a>
+						</div>
+						<div class="col">
+							<a href="#"><img class="w-75" src="assets/images/google-play.svg" alt="google-play"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Widgets END -->
+
+			<!-- About and Newsletter START -->
+			<div class="row">
+				<div class="col-md-3">
+					<div class="col-md-4 pt-1">
+						<img src="assets/images/logo-footer.svg" alt="footer logo">
+					</div>
+					<div class="mt-2">
+						<strong class="">Báo Tiếng Việt nhiều người đọc nhất</strong>
+						<p class="mt-0">Thuộc Bộ Khoa học Công nghệ
+							Số giấy phép: 06/GP-BTTTT ngày 03/01/2014</p>
+					</div>
+				</div>
+				<div class="col-md-3 align-items-end">
+					<p class="">Tổng biên tập: Ông<strong> Nguyễn Thượng Lưu</strong> <br>
+						<i class="fa fa-home fa-fw me-2"></i>Trần Duy Hưng, Cầu Giấy, Hà Nội <br>
+						<i class="fa fa-phone-square fa-fw me-2"></i>0123456704
+					</p>
+				</div>
+				<div class="col-md-3 align-items-end">
+					<ul class="nav flex-column mb-3">
+						<li class="nav-item"><a class="nav-link pt-0 pb-0" href="#"><i class="fas fa-ad fa-fw me-2"></i>Liên hệ
+								quảng cáo:</li>
+						<a href="" class="nav-link pt-0 pb-0"><i class="fa fa-phone-square fa-fw me-2"></i>0123456704</a>
+						<a href="" class="nav-link pt-0 pb-0"><i
+								class="fas fa-envelope fa-fw me-2"></i>ads.startoday@eurogroup.vn</a>
+					</ul>
+				</div>
+				<div class="col-md-3 align-items-end">
+					<ul class="nav flex-column mb-3">
+						<li class="nav-item"><a class="nav-link pt-0 pb-0" href="#"><i class="fas fa-ad fa-fw me-2"></i>Vận hành
+								bởi: EuroGroup</li>
+						<a href="" class="nav-link pt-0 pb-0"><i class="fa fa-home fa-fw me-2"></i>Toà Euro Window 27-29 Trần Duy
+							Hưng, Trung Hoà, Cầu Giấy, Hà Nội</a>
+				</div>
+				</ul>
+			</div>
+		</div>
+		</div>
+		<!-- About and Newsletter END -->
+		</div>
+
+		<!-- Footer copyright START -->
+		<div class="bg-light-overlay-3 mt-1">
+			<div class="container">
+				<div class="row align-items-center justify-content-md-between py-1">
+					<div class="col-md-6">
+						<!-- Copyright -->
+						<div class="text-center text-md-start text-primary-hover">©2021 - Bản quyền thuộc về: <a
+								href="https://www.webestica.com/" class="text-reset btn-link" target="_blank">StarToday</a>
+						</div>
+					</div>
+					<div class="col-md-6 d-sm-flex align-items-center justify-content-center justify-content-md-center">
+						<ul class="nav text-center text-sm-end justify-content-center justify-content-center mt-3 mt-md-0">
+							<li class="nav-item"><a class="nav-link" href="#">Điều khoản</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Quyền riêng tư</a></li>
+							<li class="nav-item"><a class="nav-link pe-0" href="#">Cookies</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer copyright END -->
+	</footer>
+	<!-- =======================
+Footer END -->
+	<!-- =======================
+Cookies alert START -->
+	<div
+		class="alert alert-light alert-dismissible fade show position-fixed bottom-0 start-50 translate-middle-x z-index-99 d-lg-flex justify-content-between align-items-center shadow p-4 col-9 col-md-5"
+		role="alert">
+		<p class="m-0 pe-3">Trang web này lưu trữ cookie trên máy tính của bạn. Để tìm hiểu thêm về cookie chúng tôi sử
+			dụng, xem thêm
+			<a class="text-reset" href="#"> <u>Chính sách bảo mật</u></a> của chúng tôi
+		</p>
+		<div class="d-flex mt-3 mt-lg-0 justify-content-center">
+			<button type="button" class="btn btn-success-soft btn-sm mb-0 me-2" data-bs-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">Đồng ý</span>
+			</button>
+			<!-- <button type="button" class="btn btn-danger-soft btn-sm mb-0" data-bs-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">Decline</span>
+			</button> -->
+			<div class="position-absolute end-0 top-0 mt-n3 me-n3"><img class="w-100" src="assets/images/cookie.svg"
+					alt="cookie"></div>
+		</div>
+	</div>
+	<!-- =======================
+Cookies alert END -->
+	<!-- Back to top -->
+	<div class="back-top"><i class="bi bi-arrow-up-short"></i></div>
+
+	<!-- =======================
+JS libraries, plugins and custom scripts -->
+
+	<!-- Bootstrap JS -->
+	<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Vendors -->
+	<script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
+	<script src="assets/vendor/sticky-js/sticky.min.js"></script>
+
+	<script src="assets/vendor/plyr/plyr.js"></script>
+	<script src="assets/vendor/plyr/video.js"></script>
+
+
+
+	<script>
+		const player = new Plyr('#player');
+	</script>
+	<!-- <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script> -->
+
+
+
+	<!-- Template Functions -->
+	<script src="assets/js/functions.js"></script>
+
+</body>
+
+</html>

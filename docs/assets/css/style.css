@@ -5195,7 +5195,7 @@ fieldset:disabled .btn {
   float: left;
   padding-right: 0.8rem;
   color: #a1a1a8;
-  content: var(--bs-breadcrumb-divider, "../../../index.html") /* rtl: var(--bs-breadcrumb-divider, "/") */;
+  content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
 }
 
 .breadcrumb-item.active {

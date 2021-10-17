@@ -1,7 +1,7 @@
 /**
-* Blogzine - Blog and Magazine Bootstrap 5 Theme
+* STARTODAY
 *
-* @author Webestica (https://www.webestica.com/)
+* @author ZAK
 * @version 1.0.1
 **/
 
@@ -23,6 +23,7 @@ Table Of Content
 12 GLIGHTBOX
 13 ISOTOPE
 14 DARK MODE
+15 MODAL
 ====================== */
 
 "use strict";
@@ -64,6 +65,17 @@ Table Of Content
 }();
 
 
+
+var timeDisplay = document.getElementById("time");
+
+
+function refreshTime() {
+  var dateString = new Date().toLocaleString("en-US", {timeZone: "Asia/Bangkok"});
+  var formattedString = dateString.replace(", ", " - ");
+  timeDisplay.innerHTML = formattedString;
+}
+
+setInterval(refreshTime, 1000);
 var e = {
     init: function () {
         e.preLoader(),
@@ -546,7 +558,7 @@ var e = {
         }
     },
     // END: Isotope
-
+    
     // START: 14 Dark mode
     darkMode: function () {
 
@@ -579,5 +591,7 @@ var e = {
         }        
     }
     // END: Dark mode
+    
 };
 e.init();
+

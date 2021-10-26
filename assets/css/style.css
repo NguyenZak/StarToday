@@ -319,11 +319,8 @@ h6,
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 29px;
-    color: #222222;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 abbr[title],
@@ -16727,5 +16724,3 @@ button.text-primary-hover:hover {
 
 
 /*# sourceMappingURL=style.css.map */
-
-;

@@ -52,11 +52,101 @@
         <!-- Close button -->
         <button type="button" class="btn-close btn-close-white opacity-9 p-3" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
-    <!-- Top alert END -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu">
+        <div class="offcanvas-header justify-content-end">
+            <div class="top-header-canvas">
+                <img class="light-mode-item logo-mobile" src="assets/images/logo.svg" alt="logo">
+                <img class="dark-mode-item my-3" src="assets/images/logo-light.svg" alt="logo">
+            </div>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="header-search">
+            <div class="nav mt-lg-0 flex-nowrap align-items-center">
+                <div class="nav-item w-100">
+                    <form class="rounded position-relative">
+                        <input class="form-control pe-5 bg-light" type="search" placeholder="Search the blog" aria-label="Search">
+                        <button class="btn bg-transparent px-2 py-0 position-absolute top-50 end-0 translate-middle-y" type="submit"><i class="bi bi-search fs-5"> </i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-body d-flex flex-column pt-0">
+            <div>
+                <!-- Nav START -->
+
+                <div class="navbar-canvas">
+                    <div class="nav_2">
+                        <div class="menu-list">
+                            <a href="" class="menu-title2" title="Tin nóng">Tin
+                                nóng</a>
+                        </div>
+                        <div class="menu-list">
+                            <a href="" class="menu-title2" title="Thể thao">Thể Thao</a>
+                        </div>
+                        <div class="menu-list">
+                            <a href="" class="menu-title2" title="Chính khách">Chính khách</a>
+                        </div>
+                        <div class="menu-list">
+                            <a href="" class="menu-title2" title="Doanh nhân">Doanh nhân</a>
+                        </div>
+                        <div class="menu-list">
+                            <a href="" class="menu-title2" title="Giải trí">Giải trí</a>
+                        </div>
+                        <div class="menu-list">
+                            <a href="" class="menu-title2" title="Mạng Xã Hội">Mạng Xã Hội</a>
+                        </div>
+
+
+                    </div>
+                    <div class="nav_2">
+                        <div class="menu-list">
+                            <a href="" class="menu-title2" title="Âm nhạc">Âm Nhạc</a>
+                        </div>
+                        <div class="menu-list">
+                            <a href="" class="menu-title2" title="Điện ảnh">Điện Ảnh</a>
+                        </div>
+                        <div class="menu-list">
+                            <a href="" class="menu-title2" title="Du lịch">Du lịch</a>
+                        </div>
+                        <div class="menu-list">
+                            <a href="" class="menu-title2" title=" Video">Video</a>
+                        </div>
+                        <div class="menu-list">
+                            <a href="" class="menu-title2" title="Đời sống">Đời sống</a>
+                        </div>
+                        <div class="menu-list">
+                            <a href="" class="menu-title2" title="Ẩm thực">Ẩm thực</a>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="navbar-canvas">
+                    <ul class="ulfooter">
+                        <li><strong><a title="Tải ứng dụng" href="">Tải ứng dụng</a></strong></li>
+                        <li class="text-center">
+                            <a rel="noreferrer" href="" target="_blank" title="Ứng dụng bongda24 trên PlayStore"><img class="img-app lazyload" alt="img-app" src="assets/images/google-play.svg" data-src="assets/images/google-play.svg"></a>
+                            <a rel="noreferrer" href="" target="_blank" title="Ứng dụng bongda24 trên AppleStore"><img class="img-app lazyload" alt="img-app" src="assets/images/app-store.svg" data-src="assets/images/app-store.svg"></a>
+                        </li>
+                        <li><strong>Thông tin liên hệ</strong></li>
+                        <li><i class="fas fa-phone-alt img-add"></i> Điện thoại: (024) 3.784 8888</li>
+                        <li><i class="far fa-envelope img-add"></i> Email tòa soạn: bongda24h@incom.vn</li>
+                        <li><i class="fab fa-adversal img-add"></i> Quảng cáo: thuybt@incom.vn</li>
+                    </ul>
+                </div>
+                <!-- Nav END -->
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Offcanvas END -
+  Top alert END -->
     <!-- =======================
 Header START -->
     <header class="navbar-light navbar-sticky header-static">
-
         <div class="navbar-top d-none d-lg-block small">
             <div class="container">
                 <div class="d-md-flex justify-content-between align-items-center my-2">
@@ -101,111 +191,262 @@ Header START -->
             </div>
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light">
+
+        <!-- Logo Nav START -->
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <!-- Responsive navbar Canvas -->
-                <button class="navbar-toggler" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
-								<span class="text-body h6 d-none d-sm-inline-block"></span>
-								<span class="navbar-toggler-icon"></span>
-				</button>
+
+
+                <!-- Responsive navbar toggler -->
+                <!-- Offcanvas menu toggler -->
+                <div class="nav-item">
+                    <a class="nav-link p-0" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu">
+                        <i class="fas fa-bars rtl-flip fs-2 offcanvas-none" data-bs-target="#offcanvasMenu"> </i>
+                    </a>
+                </div>
+                <!-- Logo START -->
+                <a class="navbar-brand" href="index.html">
+                    <img class="navbar-brand-item light-mode-item" src="assets/images/logo.svg" alt="logo">
+                    <img class="navbar-brand-item dark-mode-item" src="assets/images/logo-light.svg" alt="logo">
+                </a>
+                <!-- Logo END -->
 
                 <!-- Main navbar START -->
-                <a class="navbar-brand mx-0" href="index.html">
-                    <img class="navbar-brand-item light-mode-item" src="assets/images/logo.svg" alt="logo">
-                    <!-- <img class="navbar-brand-item dark-mode-item" src="assets/images/logo-light.svg" alt="logo"> -->
-                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav navbar-nav-scroll mx-auto">
 
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-controls="offcanvasExampleLabel">
-                    <div class="offcanvas-header justify-content-end">
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-header d-flex d-lg-none">
-                        <img class="light-mode-item" src="assets/images/logo.svg" alt="logo">
-                        <img class="dark-mode-item my-3" src="assets/images/logo-light.svg" alt="logo">
+                        <!-- Nav item 1 Demos -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" href="#" id="homeMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Trang chủ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="categories-thethao.html">Thể thao</a>
+                            <ul class="dropdown-menu">
+                                <!-- dropdown submenu -->
+                                <li><a class="dropdown-item" href="categories-thethao.html">Bóng đá</a> </li>
+                                <li> <a class="dropdown-item" href="categories-thethao.html">Lịch thi đấu</a> </li>
+                                <li> <a class="dropdown-item" href="post-list.html">Tường thuật</a> </li>
+                                <li> <a class="dropdown-item" href="post-list-2.html">Bundesliga</a> </li>
+                                <li> <a class="dropdown-item" href="post-cards.html">Champion League</a> </li>
+                                <li> <a class="dropdown-item" href="post-overlay.html">LaLiga</a> </li>
+                            </ul>
+                        </li>
 
-                        </a>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav navbar-nav-scroll mx-auto">
+                        <!-- Nav item 2 Pages -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="categories-dulich.html" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                            <ul class="dropdown-menu" aria-labelledby="pagesMenu">
+                                <li> <a class="dropdown-item" href="about-us.html">About</a></li>
+                                <li> <a class="dropdown-item" href="contact-us.html">Contact</a></li>
+                                <!-- Dropdown submenu -->
+                                <li class="dropdown-submenu dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Other Archives</a>
+                                    <ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
+                                        <li> <a class="dropdown-item" href="author.html">Author Page</a> </li>
+                                        <li> <a class="dropdown-item" href="categories.html">Category page 1</a> </li>
+                                        <li> <a class="dropdown-item" href="categories-2.html">Category page 2</a> </li>
+                                        <li> <a class="dropdown-item" href="tag.html"># tag</a> </li>
+                                        <li> <a class="dropdown-item" href="search-result.html">Search result</a> </li>
+                                    </ul>
+                                </li>
+                                <li> <a class="dropdown-item" href="404.html">Error 404</a></li>
+                                <li> <a class="dropdown-item" href="signin.html">signin</a></li>
+                                <li> <a class="dropdown-item" href="signup.html">signup</a></li>
+                                <!-- Dropdown submenu levels -->
+                                <li class="dropdown-divider"></li>
+                                <li class="dropdown-submenu dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Dropdown levels</a>
+                                    <ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
+                                        <!-- dropdown submenu open right -->
+                                        <li class="dropdown-submenu dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#">Dropdown (end)</a>
+                                            <ul class="dropdown-menu" data-bs-popper="none">
+                                                <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+                                                <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+                                        <!-- dropdown submenu open left -->
+                                        <li class="dropdown-submenu dropstart">
+                                            <a class="dropdown-item dropdown-toggle" href="#">Dropdown (start)</a>
+                                            <ul class="dropdown-menu dropdown-menu-end" data-bs-popper="none">
+                                                <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+                                                <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item" href="https://support.webestica.com/" target="_blank">
+                                        <i class="text-warning fa-fw bi bi-life-preserver me-2"></i>Support
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="docs/index.html" target="_blank">
+                                        <i class="text-danger fa-fw bi bi-card-text me-2"></i>Documentation
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item" href="https://blogzine.webestica.com/rtl" target="_blank">
+                                        <i class="text-info fa-fw bi bi-toggle-off me-2"></i>RTL demo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="https://themes.getbootstrap.com/store/webestica/" target="_blank">
+                                        <i class="text-success fa-fw bi bi-cloud-download-fill me-2"></i>Buy blogzine!
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
 
-                            <!-- Nav item 1 -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
+                        <!-- Nav item 3 Post -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="postMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Post</a>
+                            <ul class="dropdown-menu" aria-labelledby="postMenu">
+                                <!-- dropdown submenu -->
+                                <li class="dropdown-submenu dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Post grid</a>
+                                    <ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
+                                        <li> <a class="dropdown-item" href="post-grid.html">Post grid</a> </li>
+                                        <li> <a class="dropdown-item" href="post-grid-4-col.html">Post grid 4 col</a>
+                                        </li>
+                                        <li> <a class="dropdown-item" href="post-grid-masonry.html">Post grid
+                                                masonry</a> </li>
+                                        <li> <a class="dropdown-item" href="post-grid-masonry-filter.html">Post grid
+                                                masonry filter</a> </li>
+                                        <li> <a class="dropdown-item" href="post-large-and-grid.html">Post mixed large
+                                                than grid</a> </li>
+                                    </ul>
+                                </li>
+                                <li> <a class="dropdown-item" href="post-list.html">Post list</a> </li>
+                                <li> <a class="dropdown-item" href="post-list-2.html">Post list 2</a> </li>
+                                <li> <a class="dropdown-item" href="post-cards.html">Post card</a> </li>
+                                <li> <a class="dropdown-item" href="post-overlay.html">Post overlay</a> </li>
+                                <li class="dropdown-divider"></li>
+                                <li> <a class="dropdown-item" href="post-single.html">Post single magazine</a> </li>
+                                <li> <a class="dropdown-item" href="post-single-2.html">Post single classic</a> </li>
+                                <li> <a class="dropdown-item" href="post-single-3.html">Post single minimal</a> </li>
+                                <li> <a class="dropdown-item" href="post-single-4.html">Post single card</a> </li>
+                                <li> <a class="dropdown-item" href="post-single-5.html">Post single review</a> </li>
+                                <li> <a class="dropdown-item" href="post-single-6.html">Post single video</a> </li>
+                                <li class="dropdown-divider"></li>
+                                <li> <a class="dropdown-item" href="pagination-styles.html">Pagination styles</a> </li>
+                            </ul>
+                        </li>
 
-                            <!-- Nav item 2 -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="categories-thethao.html">Thể thao</a>
-                                <ul class="dropdown-menu" aria-labelledby="pagesMenu">
-                                    <!-- dropdown submenu -->
-                                    <li><a class="dropdown-item" href="categories-thethao.html">Bóng đá</a> </li>
-                                    <li> <a class="dropdown-item" href="categories-thethao.html">Lịch thi đấu</a> </li>
-                                    <li> <a class="dropdown-item" href="post-list.html">Tường thuật</a> </li>
-                                    <li> <a class="dropdown-item" href="post-list-2.html">Bundesliga</a> </li>
-                                    <li> <a class="dropdown-item" href="post-cards.html">Champion League</a> </li>
-                                    <li> <a class="dropdown-item" href="post-overlay.html">LaLiga</a> </li>
-                                    <li class="dropdown-divider"></li>
-                                    <li class="dropdown-submenu dropend">
-                                        <a class="dropdown-item dropdown-toggle" href="#">Môn thể thao khác</a>
-                                    </li>
-                                </ul>
-                            </li>
+                        <!-- Nav item 4 Mega menu -->
+                        <li class="nav-item dropdown dropdown-fullwidth">
+                            <a class="nav-link dropdown-toggle" href="#" id="megaMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Lifestyle</a>
+                            <div class="dropdown-menu" aria-labelledby="megaMenu">
+                                <div class="container">
+                                    <div class="row g-4 p-3 flex-fill">
+                                        <!-- Card item START -->
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div class="card bg-transparent">
+                                                <!-- Card img -->
+                                                <img class="card-img rounded" src="assets/images/blog/16by9/small/01.jpg" alt="Card image">
+                                                <div class="card-body px-0 pt-3">
+                                                    <h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold">7 common mistakes
+                                                            everyone makes while traveling</a></h6>
+                                                    <!-- Card info -->
+                                                    <ul class="nav nav-divider align-items-center text-uppercase small mt-2">
+                                                        <li class="nav-item">
+                                                            <a href="#" class="text-reset btn-link">Joan Wallace</a>
+                                                        </li>
+                                                        <li class="nav-item">Feb 18, 2021</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Card item END -->
+                                        <!-- Card item START -->
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div class="card bg-transparent">
+                                                <!-- Card img -->
+                                                <img class="card-img rounded" src="assets/images/blog/16by9/small/02.jpg" alt="Card image">
+                                                <div class="card-body px-0 pt-3">
+                                                    <h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold">12 worst types of
+                                                            business accounts you follow on Twitter</a></h6>
+                                                    <!-- Card info -->
+                                                    <ul class="nav nav-divider align-items-center text-uppercase small mt-2">
+                                                        <li class="nav-item">
+                                                            <a href="#" class="text-reset btn-link">Lori Stevens</a>
+                                                        </li>
+                                                        <li class="nav-item">Jun 03, 2021</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Card item END -->
+                                        <!-- Card item START -->
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div class="card bg-transparent">
+                                                <!-- Card img -->
+                                                <img class="card-img rounded" src="assets/images/blog/16by9/small/03.jpg" alt="Card image">
+                                                <div class="card-body px-0 pt-3">
+                                                    <h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold">Skills that you can
+                                                            learn from business</a></h6>
+                                                    <!-- Card info -->
+                                                    <ul class="nav nav-divider align-items-center text-uppercase small mt-2">
+                                                        <li class="nav-item">
+                                                            <a href="#" class="text-reset btn-link">Judy Nguyen</a>
+                                                        </li>
+                                                        <li class="nav-item">Sep 07, 2021</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Card item END -->
+                                        <!-- Card item START -->
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div class="bg-primary-soft p-4 text-center h-100 w-100 rounded">
+                                                <span>The Blogzine</span>
+                                                <h3>Premium Membership</h3>
+                                                <p>Become a Member Today!</p>
+                                                <a href="#" class="btn btn-warning">View pricing plans</a>
+                                            </div>
+                                        </div>
+                                        <!-- Card item END -->
+                                    </div>
+                                    <!-- Row END -->
+                                    <!-- Trending tags -->
+                                    <div class="row px-3">
+                                        <div class="col-12">
+                                            <ul class="list-inline mt-3">
+                                                <li class="list-inline-item">Trending tags:</li>
+                                                <li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Travel</a></li>
+                                                <li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">Business</a></li>
+                                                <li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Tech</a></li>
+                                                <li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Gadgets</a></li>
+                                                <li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Lifestyle</a></li>
+                                                <li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Vaccine</a></li>
+                                                <li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Sports</a></li>
+                                                <li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Covid-19</a></li>
+                                                <li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Politics</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Row END -->
+                                </div>
+                            </div>
+                        </li>
 
-                            <!-- Nav item 3 -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="categorises-giaitri.html">Giải trí</a>
-                                <ul class="dropdown-menu" aria-labelledby="postMenu">
-                                    <!-- dropdown submenu -->
-                                    <li> <a class="dropdown-item" href="post-list.html">Sao</a> </li>
-                                    <li> <a class="dropdown-item" href="post-list.html">Video</a> </li>
-                                    <li> <a class="dropdown-item" href="post-list-2.html">Phim</a> </li>
-                                    <li> <a class="dropdown-item" href="post-cards.html">Nhạc</a> </li>
-                                    <li> <a class="dropdown-item" href="post-overlay.html">Thời trang</a> </li>
-                                    <li> <a class="dropdown-item" href="post-overlay.html">Làm đẹp</a> </li>
-                                </ul>
-                            </li>
-
-                            <!-- Nav item 4 -->
-                            <li class="nav-item dropdown dropdown-fullwidth">
-                                <a class="nav-link" href="#">Doanh nhân</a>
-                            </li>
-
-                            <!-- Nav item 5 -->
-                            <li class="nav-item dropdown dropdown-fullwidth">
-                                <a class="nav-link" href="#">Chính khách</a>
-                            </li>
-
-                            <!-- Nav item 6 -->
-                            <li class="nav-item dropdown dropdown-fullwidth">
-                                <a class="nav-link" href="categories-dulich.html">Du lịch</a>
-                            </li>
-
-                            <!-- Nav item 7 -->
-                            <li class="nav-item dropdown dropdown-fullwidth">
-                                <a class="nav-link" href="#">Video</a>
-                            </li>
-
-                            <!-- Nav item 8 -->
-                            <li class="nav-item dropdown dropdown-fullwidth">
-                                <a class="nav-link" href="#">Đời sống</a>
-                            </li>
-
-                            <!-- Nav item 9 -->
-                            <li class="nav-item dropdown dropdown-fullwidth">
-                                <a class="nav-link" href="#">Ẩm thực</a>
-                            </li>
-                        </ul>
-                    </div>
+                        <!-- Nav item 5 link-->
+                        <li class="nav-item"> <a class="nav-link" href="../docs/alerts.html">Components</a></li>
+                    </ul>
                 </div>
-
                 <!-- Main navbar END -->
 
                 <!-- Nav right START -->
-                <div class="nav flex-nowrap align-items-end">
+                <div class="nav flex-nowrap align-items-center">
                     <!-- Nav Button -->
                     <div class="nav-item mx-0">
                         <a href="login.html" class="nav-link btn btn-sm mb-0 mx-0"><i class="fa fa-user fs-5"></i></a>
                     </div>
+                    <!-- Nav Search -->
                     <!-- Nav Search -->
                     <div class="nav-item dropdown dropdown-toggle-icon-none nav-search d-none d-md-block">
                         <a class="nav-link dropdown-toggle" role="button" href="#" id="navSearch" data-bs-toggle="dropdown" aria-expanded="false">
@@ -217,11 +458,10 @@ Header START -->
                                 <button class="btn bg-transparent px-2 py-0 position-absolute top-50 end-0 translate-middle-y" type="submit"><i class="bi bi-search fs-5"> </i></button>
                             </form>
                         </div>
-                    </div>
-                </div>
-                <!-- Nav right END -->
 
-            </div>
+                    </div>
+                    <!-- Nav right END -->
+                </div>
         </nav>
         <!-- Logo Nav END -->
     </header>
@@ -246,12 +486,15 @@ Trending Slide START -->
                             <div class="tiny-slider arrow-end arrow-xs arrow-white arrow-round arrow-md-none">
                                 <div class="tiny-slider-inner" data-autoplay="true" data-hoverpause="true" data-gutter="0" data-arrow="true" data-dots="false" data-items="1" data-autoplaytime="3000" data-speed="1000">
                                     <!-- Slider items -->
-                                    <div> <a href="#" class="text-reset btn-link">The most common business debate isn't as black and white
-											as you might think</a></div>
-                                    <div> <a href="#" class="text-reset btn-link">How the 10 worst business fails of all time could have
-											been prevented </a></div>
-                                    <div> <a href="#" class="text-reset btn-link">The most common business debate isn't as black and white
-											as you might think </a></div>
+                                    <div> <a href="#" class="text-reset btn-link">The most common business debate isn't
+                                            as black and white
+                                            as you might think</a></div>
+                                    <div> <a href="#" class="text-reset btn-link">How the 10 worst business fails of all
+                                            time could have
+                                            been prevented </a></div>
+                                    <div> <a href="#" class="text-reset btn-link">The most common business debate isn't
+                                            as black and white
+                                            as you might think </a></div>
                                 </div>
                             </div>
                         </div>
@@ -287,9 +530,11 @@ Main hero START -->
                                         <div class="w-100 mt-auto">
                                             <div class="col">
                                                 <!-- Card category -->
-                                                <a href="#" class="badge bg-danger mb-2"><i class="fas fa-star me-2 small fw-bold"></i>Star</a>
+                                                <a href="#" class="badge bg-danger mb-2"><i
+                                                        class="fas fa-star me-2 small fw-bold"></i>Star</a>
                                                 <!-- Card title -->
-                                                <h2 class="text-white display-7"><a href="post-single-4.html" class="btn-link text-reset stretched-link fw-normal">Giáng My du lịch Cần Giờ</a></h2>
+                                                <h2 class="text-white display-7"><a href="post-single-4.html" class="btn-link text-reset stretched-link fw-normal">Giáng My du
+                                                        lịch Cần Giờ</a></h2>
                                                 <p class="slider-post-decs">Hoa hậu Giáng My cùng bạn bè xuống Cần Giờ hái xoài, thưởng thức hải sản... dịp cuối tuần. </p>
                                                 <!-- Card info -->
                                                 <ul class="nav nav-divider text-white-force align-items-center d-sm-inline-block">
@@ -297,8 +542,9 @@ Main hero START -->
                                                         <div class="nav-link">
                                                             <div class="d-flex align-items-center text-white position-relative">
                                                                 <i class="far fa-comment-alt"></i>
-                                                                <span class="ms-3">1 <a href="#" class="stretched-link text-reset btn-link">Bình
-																		luận</a></span>
+                                                                <span class="ms-3">1 <a href="#"
+                                                                        class="stretched-link text-reset btn-link">Bình
+                                                                        luận</a></span>
                                                             </div>
                                                         </div>
                                                     </li>
@@ -316,9 +562,11 @@ Main hero START -->
                                         <div class="w-100 mt-auto">
                                             <div class="col">
                                                 <!-- Card category -->
-                                                <a href="#" class="badge bg-danger mb-2"><i class="fas fa-star me-2 small fw-bold"></i>Star</a>
+                                                <a href="#" class="badge bg-danger mb-2"><i
+                                                        class="fas fa-star me-2 small fw-bold"></i>Star</a>
                                                 <!-- Card title -->
-                                                <h2 class="text-white display-7"><a href="post-single-4.html" class="btn-link text-reset stretched-link fw-normal">Jang Nara bị giục lấy chồng</a></h2>
+                                                <h2 class="text-white display-7"><a href="post-single-4.html" class="btn-link text-reset stretched-link fw-normal">Jang Nara
+                                                        bị giục lấy chồng</a></h2>
                                                 <p class="slider-post-decs">Khi anh trai Jang Nara kết hôn, bố diễn viên trả lời phỏng vấn mong con gái 40 tuổi sớm cưới để ông yên tâm.</p>
                                                 <!-- Card info -->
                                                 <ul class="nav nav-divider text-white-force align-items-center d-sm-inline-block">
@@ -326,8 +574,9 @@ Main hero START -->
                                                         <div class="nav-link">
                                                             <div class="d-flex align-items-center text-white position-relative">
                                                                 <i class="far fa-comment-alt"></i>
-                                                                <span class="ms-3"> 10 <a href="#" class="stretched-link text-reset btn-link">Bình
-																		luận</a></span>
+                                                                <span class="ms-3"> 10 <a href="#"
+                                                                        class="stretched-link text-reset btn-link">Bình
+                                                                        luận</a></span>
                                                             </div>
                                                         </div>
                                                     </li>
@@ -353,15 +602,18 @@ Main hero START -->
                                     <div class="card-img-overlay d-flex align-items-center p-3 p-sm-3">
                                         <div class="w-100 mt-auto">
                                             <!-- Card category -->
-                                            <a href="#" class="badge bg-danger"><i class="far fa-futbol me-2 small fw-bold"></i>Thể thao</a>
+                                            <a href="#" class="badge bg-danger"><i
+                                                    class="far fa-futbol me-2 small fw-bold"></i>Thể thao</a>
                                             <!-- Card title -->
-                                            <h4 class="text-white display-8"><a href="post-single-4.html" class="btn-link stretched-link text-reset">Thông tin thể thao mới nhất</a></h4>
+                                            <h4 class="text-white display-8"><a href="post-single-4.html" class="btn-link stretched-link text-reset">Thông tin thể thao mới
+                                                    nhất</a></h4>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider text-white-force align-items-center d-sm-inline-block">
                                                 <li class="nav-item position-relative">
                                                     <i class="far fa-comment-alt"></i>
-                                                    <span class="ms-3"> 10 <a href="#" class="stretched-link text-reset btn-link">Bình luận</a>
-													</span>
+                                                    <span class="ms-3"> 10 <a href="#"
+                                                            class="stretched-link text-reset btn-link">Bình luận</a>
+                                                    </span>
                                                 </li>
                                                 <li class="nav-item">1 ngày trước</li>
                                             </ul>
@@ -377,17 +629,20 @@ Main hero START -->
                                     <div class="card-img-overlay d-flex align-items-center p-3 p-sm-3">
                                         <div class="w-100 mt-auto">
                                             <!-- Card category -->
-                                            <a href="#" class="badge bg-danger mb-2"><i class="fas fa-user-tie me-2 small fw-bold"></i>Chính
-												khách</a>
+                                            <a href="#" class="badge bg-danger mb-2"><i
+                                                    class="fas fa-user-tie me-2 small fw-bold"></i>Chính
+                                                khách</a>
                                             <!-- Card title -->
-                                            <h4 class="text-white display-8"><a href="post-single-4.html" class="btn-link stretched-link text-reset">Thông tin về các chính khách trong nước và quốc
-													tế</a></h4>
+                                            <h4 class="text-white display-8"><a href="post-single-4.html" class="btn-link stretched-link text-reset">Thông tin về các chính
+                                                    khách trong nước và quốc
+                                                    tế</a></h4>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider text-white-force align-items-center d-sm-inline-block">
                                                 <li class="nav-item position-relative">
                                                     <i class="far fa-comment-alt"></i>
-                                                    <span class="ms-3"> 10 <a href="#" class="stretched-link text-reset btn-link">Bình luận</a>
-													</span>
+                                                    <span class="ms-3"> 10 <a href="#"
+                                                            class="stretched-link text-reset btn-link">Bình luận</a>
+                                                    </span>
                                                 </li>
                                                 <li class="nav-item">1 ngày trước</li>
                                             </ul>
@@ -403,16 +658,19 @@ Main hero START -->
                                     <div class="card-img-overlay d-flex align-items-center p-3 p-sm-3">
                                         <div class="w-100 mt-auto">
                                             <!-- Card category -->
-                                            <a href="#" class="badge bg-primary mb-2"><i class="fas fa-user-tie me-2 small fw-bold"></i>Doanh
-												nhân</a>
+                                            <a href="#" class="badge bg-primary mb-2"><i
+                                                    class="fas fa-user-tie me-2 small fw-bold"></i>Doanh
+                                                nhân</a>
                                             <!-- Card title -->
-                                            <h4 class="text-white display-8"><a href="post-single-4.html" class="btn-link stretched-link text-reset">Thông tin về kinh tế và doanh nhân</a></h4>
+                                            <h4 class="text-white display-8"><a href="post-single-4.html" class="btn-link stretched-link text-reset">Thông tin về kinh tế và
+                                                    doanh nhân</a></h4>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider text-white-force align-items-center d-sm-inline-block">
                                                 <li class="nav-item position-relative">
                                                     <i class="far fa-comment-alt"></i>
-                                                    <span class="ms-3"> 10 <a href="#" class="stretched-link text-reset btn-link">Bình luận</a>
-													</span>
+                                                    <span class="ms-3"> 10 <a href="#"
+                                                            class="stretched-link text-reset btn-link">Bình luận</a>
+                                                    </span>
                                                 </li>
                                                 <li class="nav-item">1 ngày trước</li>
                                             </ul>
@@ -428,16 +686,19 @@ Main hero START -->
                                     <div class="card-img-overlay d-flex align-items-center p-3 p-sm-3">
                                         <div class="w-100 mt-auto">
                                             <!-- Card category -->
-                                            <a href="#" class="badge bg-info mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>Showbiz</a>
+                                            <a href="#" class="badge bg-info mb-2"><i
+                                                    class="fas fa-circle me-2 small fw-bold"></i>Showbiz</a>
                                             <!-- Card title -->
-                                            <h4 class="text-white display-8"><a href="post-single-4.html" class="btn-link stretched-link text-reset">Thông tin về giải trí trong nước và quốc tế</a>
+                                            <h4 class="text-white display-8"><a href="post-single-4.html" class="btn-link stretched-link text-reset">Thông tin về giải trí
+                                                    trong nước và quốc tế</a>
                                             </h4>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider text-white-force align-items-center d-sm-inline-block">
                                                 <li class="nav-item position-relative">
                                                     <i class="far fa-comment-alt"></i>
-                                                    <span class="ms-3"> 10 <a href="#" class="stretched-link text-reset btn-link">Bình luận</a>
-													</span>
+                                                    <span class="ms-3"> 10 <a href="#"
+                                                            class="stretched-link text-reset btn-link">Bình luận</a>
+                                                    </span>
                                                 </li>
                                                 <li class="nav-item">1 ngày trước</li>
                                             </ul>
@@ -482,22 +743,25 @@ Main hero END -->
                                             <!-- Card overlay bottom -->
                                             <div class="w-100 mt-auto">
                                                 <!-- Card category -->
-                                                <a href="#" class="badge bg-danger"><i class="far fa-futbol me-2 small fw-bold"></i>Sports</a>
+                                                <a href="#" class="badge bg-danger"><i
+                                                        class="far fa-futbol me-2 small fw-bold"></i>Sports</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-body px-0 pt-3">
                                         <h4 class="card-title"><a href="post-single.html" class="btn-link text-reset fw-regular">Ronaldo:
-												'Tôi muốn tiếp tục làm nên lịch sử cùng Man Utd'</a></h4>
-                                        <p class="card-text">ANH - Cristiano Ronaldo tin Man Utd đang đi đúng hướng và rộng cửa vào vòng knock-out Champions League, sau trận thắng Villarreal tối</p>
+                                                'Tôi muốn tiếp tục làm nên lịch sử cùng Man Utd'</a></h4>
+                                        <p class="card-text">ANH - Cristiano Ronaldo tin Man Utd đang đi đúng hướng và rộng cửa vào vòng knock-out Champions League, sau trận thắng Villarreal tối
+                                        </p>
                                         <!-- Card info -->
                                         <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                             <li class="nav-item">
                                                 <div class="nav-link">
                                                     <div class="d-flex align-items-center position-relative">
                                                         <i class="far fa-comment-alt"></i>
-                                                        <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																luận</a></span>
+                                                        <span class="ms-3">5 <a href="#"
+                                                                class="stretched-link text-reset btn-link">Bình
+                                                                luận</a></span>
                                                     </div>
                                                 </div>
                                             </li>
@@ -513,15 +777,17 @@ Main hero END -->
                                 <div class="card mb-1">
                                     <div class="row g-3 card-body px-0 border-bottom">
                                         <h5><a href="post-single-5.html" class="btn-link stretched-link text-reset fw-regular">Khi Juventus
-												trở về bản ngã</a></h5>
+                                                trở về bản ngã</a></h5>
                                         <div class="col-4">
                                             <img class="rounded-3" src="assets/images/sport/sport-1.jpg" alt="">
                                         </div>
                                         <div class="col-8">
 
-                                            <h6><a href="post-single-5.html" class="text-reset">ITALY - Sau những chấp chới đầu mùa, Juventus
-													dần trở lại đường ray bằng lối chơi phòng ngự đầy bản sắc, mà gần nhất là chiến thắng trước
-													ĐKVĐ Chelsea ở Champions League.</a></h6>
+                                            <h6><a href="post-single-5.html" class="text-reset">ITALY - Sau những chấp
+                                                    chới đầu mùa, Juventus
+                                                    dần trở lại đường ray bằng lối chơi phòng ngự đầy bản sắc, mà gần
+                                                    nhất là chiến thắng trước
+                                                    ĐKVĐ Chelsea ở Champions League.</a></h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
@@ -529,8 +795,9 @@ Main hero END -->
                                                         <div class="d-flex align-items-center position-relative">
 
                                                             <i class="far fa-comment-alt"></i>
-                                                            <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																	luận</a></span>
+                                                            <span class="ms-3">5 <a href="#"
+                                                                    class="stretched-link text-reset btn-link">Bình
+                                                                    luận</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -544,22 +811,26 @@ Main hero END -->
                                 <div class="card mb-1">
                                     <div class="row g-3 card-body px-0 border-bottom">
                                         <h5><a href="post-single-5.html" class="btn-link stretched-link text-reset fw-regular">
-												Ronaldo biết trước sẽ ghi bàn vào lưới Villarreal</a></h5>
+                                                Ronaldo biết trước sẽ ghi bàn vào lưới Villarreal</a></h5>
                                         <div class="col-4">
                                             <img class="rounded-3" src="assets/images/sport/sport-2.jpg" alt="">
                                         </div>
                                         <div class="col-8">
 
-                                            <h6><a href="post-single-5.html" class="text-reset">ANH - Cristiano Ronaldo nhắn tin cho cựu trung
-													vệ Rio Ferdinand để chia sẻ niềm vui sau khi xé lưới Villarreal ở Champions League tối
-													29/9.</a></h6>
+                                            <h6><a href="post-single-5.html" class="text-reset">ANH - Cristiano Ronaldo
+                                                    nhắn tin cho cựu trung
+                                                    vệ Rio Ferdinand để chia sẻ niềm vui sau khi xé lưới Villarreal ở
+                                                    Champions League tối
+                                                    29/9.</a></h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
                                                             <i class="far fa-comment-alt"></i>
-                                                            <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình luận</a></span>
+                                                            <span class="ms-3">5 <a href="#"
+                                                                    class="stretched-link text-reset btn-link">Bình
+                                                                    luận</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -573,13 +844,15 @@ Main hero END -->
                                 <div class="card mb-1">
                                     <div class="row g-3">
                                         <h5><a href="post-single-5.html" class="btn-link stretched-link text-reset fw-regular">
-												Ngoại hạng Anh thưởng đội có nhiều cầu thủ tiêm vaccine</a></h5>
+                                                Ngoại hạng Anh thưởng đội có nhiều cầu thủ tiêm vaccine</a></h5>
                                         <div class="col-4">
                                             <img class="rounded-3" src="assets/images/sport/sport-4.jpg" alt="">
                                         </div>
                                         <div class="col-8">
-                                            <h6><a href="post-single-5.html" class="text-reset">Giải đấu số một nước Anh đưa ra biện pháp
-													khuyến khích trước tình trạng cầu thủ trì hoãn tiêm vaccine Covid-19.</a></h6>
+                                            <h6><a href="post-single-5.html" class="text-reset">Giải đấu số một nước Anh
+                                                    đưa ra biện pháp
+                                                    khuyến khích trước tình trạng cầu thủ trì hoãn tiêm vaccine
+                                                    Covid-19.</a></h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
@@ -587,8 +860,9 @@ Main hero END -->
                                                         <div class="d-flex align-items-center position-relative">
 
                                                             <i class="far fa-comment-alt"></i>
-                                                            <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																	luận</a></span>
+                                                            <span class="ms-3">5 <a href="#"
+                                                                    class="stretched-link text-reset btn-link">Bình
+                                                                    luận</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -647,7 +921,8 @@ Adv END -->
                             <!-- Card item START -->
                             <div class="col-sm-6 p-md-3">
                                 <div class="title-box-category">
-                                    <h3 class="parent-cate"><a href="" class="inner-title"><i class="fas fa-user-tie fa-fw me-2"></i>Chính khách</a></h3>
+                                    <h3 class="parent-cate"><a href="" class="inner-title"><i
+                                                class="fas fa-user-tie fa-fw me-2"></i>Chính khách</a></h3>
                                 </div>
                                 <div class="card">
                                     <!-- Card img -->
@@ -657,15 +932,16 @@ Adv END -->
                                             <!-- Card overlay bottom -->
                                             <div class="w-100 mt-auto">
                                                 <!-- Card category -->
-                                                <a href="#" class="badge bg-danger"><i class="fas fa-user-tie me-2 small fw-bold"></i>Chính
-													khách</a>
+                                                <a href="#" class="badge bg-danger"><i
+                                                        class="fas fa-user-tie me-2 small fw-bold"></i>Chính
+                                                    khách</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-body px-0 pt-3">
                                         <h4 class="card-title"><a href="post-single.html" class="btn-link text-reset fw-regular">Chính khách
-												Việt và hình ảnh trước công chúng
-											</a></h4>
+                                                Việt và hình ảnh trước công chúng
+                                            </a></h4>
                                         <p class="card-text">Sau 30/9, TP HCM sẽ dỡ các chốt nội đô, bỏ giấy đi đường, người dân có thể đi lại nhưng không tự ý ra khỏi thành phố, theo Phó chủ tịch thành phố Lê Hòa Bình.</p>
                                         <!-- Card info -->
                                         <ul class="nav nav-divider align-items-center d-sm-inline-block">
@@ -673,8 +949,9 @@ Adv END -->
                                                 <div class="nav-link">
                                                     <div class="d-flex align-items-center position-relative">
                                                         <i class="far fa-comment-alt"></i>
-                                                        <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																luận</a></span>
+                                                        <span class="ms-3">5 <a href="#"
+                                                                class="stretched-link text-reset btn-link">Bình
+                                                                luận</a></span>
                                                     </div>
                                                 </div>
                                             </li>
@@ -686,26 +963,30 @@ Adv END -->
                                 <div class="card mb-1">
                                     <div class="row g-3 card-body px-0 border-top">
                                         <h5><a href="post-single-5.html" class="btn-link stretched-link text-reset fw-regular">
-												Chuyến thăm đa mục tiêu, với nhiều ý nghĩa quan trọng</a></h5>
+                                                Chuyến thăm đa mục tiêu, với nhiều ý nghĩa quan trọng</a></h5>
                                         <div class="col-4">
                                             <img class="rounded-3" src="assets/images/chinh-khach/chinh-khach-2.jpg" alt="">
                                         </div>
                                         <div class="col-8">
-                                            <h6><a href="post-single-5.html" class="text-reset">Nhân dịp Chủ tịch nước Nguyễn Xuân Phúc thăm
-													chính thức Cuba và tham dự Phiên thảo luận chung cấp cao Đại hội đồng Liên Hợp Quốc (ĐHĐ LHQ)
-													khóa 76 từ ngày 18 đến ngày 24/9/2021, Thứ trưởng Bộ Ngoại giao Đặng Hoàng Giang đã trả lời
-													phỏng vấn báo chí về chuyến đi của Chủ tịch nước.
+                                            <h6><a href="post-single-5.html" class="text-reset">Nhân dịp Chủ tịch nước
+                                                    Nguyễn Xuân Phúc thăm
+                                                    chính thức Cuba và tham dự Phiên thảo luận chung cấp cao Đại hội
+                                                    đồng Liên Hợp Quốc (ĐHĐ LHQ)
+                                                    khóa 76 từ ngày 18 đến ngày 24/9/2021, Thứ trưởng Bộ Ngoại giao Đặng
+                                                    Hoàng Giang đã trả lời
+                                                    phỏng vấn báo chí về chuyến đi của Chủ tịch nước.
 
 
-												</a></h6>
+                                                </a></h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
                                                             <i class="far fa-comment-alt"></i>
-                                                            <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																	luận</a></span>
+                                                            <span class="ms-3">5 <a href="#"
+                                                                    class="stretched-link text-reset btn-link">Bình
+                                                                    luận</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -719,23 +1000,27 @@ Adv END -->
                                 <div class="card mb-1">
                                     <div class="row g-3 card-body px-0 border-top">
                                         <h5><a href="post-single-5.html" class="btn-link stretched-link text-reset fw-regular">
-												Thủ tướng điện đàm với Đặc phái viên của Tổng thống Hoa Kỳ về biến đổi khí hậu</a></h5>
+                                                Thủ tướng điện đàm với Đặc phái viên của Tổng thống Hoa Kỳ về biến đổi
+                                                khí hậu</a></h5>
                                         <div class="col-4">
                                             <img class="rounded-3" src="assets/images/chinh-khach/chinh-khach-3.jpg" alt="">
                                         </div>
                                         <div class="col-8">
-                                            <h6><a href="post-single-5.html" class="text-reset">Ngày 08/10 tại trụ sở Chính phủ, Thủ tướng
-													Chính phủ Phạm Minh Chính đã có cuộc điện đàm với Đặc phái viên của Tổng thống Hoa Kỳ về Biến
-													đổi khí hậu John Kerry.
-												</a></h6>
+                                            <h6><a href="post-single-5.html" class="text-reset">Ngày 08/10 tại trụ sở
+                                                    Chính phủ, Thủ tướng
+                                                    Chính phủ Phạm Minh Chính đã có cuộc điện đàm với Đặc phái viên của
+                                                    Tổng thống Hoa Kỳ về Biến
+                                                    đổi khí hậu John Kerry.
+                                                </a></h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
                                                             <i class="far fa-comment-alt"></i>
-                                                            <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																	luận</a></span>
+                                                            <span class="ms-3">5 <a href="#"
+                                                                    class="stretched-link text-reset btn-link">Bình
+                                                                    luận</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -749,23 +1034,27 @@ Adv END -->
                                 <div class="card mb-1">
                                     <div class="row g-3 card-body px-0 border-top">
                                         <h5><a href="post-single-5.html" class="btn-link stretched-link text-reset fw-regular">
-												Đẩy mạnh chủ nghĩa đa phương và hợp tác quốc tế
-											</a></h5>
+                                                Đẩy mạnh chủ nghĩa đa phương và hợp tác quốc tế
+                                            </a></h5>
                                         <div class="col-4">
                                             <img class="rounded-3" src="assets/images/chinh-khach/chinh-khach-4.jpg" alt="">
                                         </div>
                                         <div class="col-8">
-                                            <h6><a href="post-single-5.html" class="text-reset">Bộ trưởng Bùi Thanh Sơn cho rằng, hơn lúc nào
-													hết, cần đẩy mạnh chủ nghĩa đa phương và hợp tác quốc tế nhằm kiểm soát dịch bệnh, nâng cao
-													khả năng thích ứng và đẩy nhanh quá trình phục hồi kinh tế trên phạm vi toàn cầu.</a></h6>
+                                            <h6><a href="post-single-5.html" class="text-reset">Bộ trưởng Bùi Thanh Sơn
+                                                    cho rằng, hơn lúc nào
+                                                    hết, cần đẩy mạnh chủ nghĩa đa phương và hợp tác quốc tế nhằm kiểm
+                                                    soát dịch bệnh, nâng cao
+                                                    khả năng thích ứng và đẩy nhanh quá trình phục hồi kinh tế trên phạm
+                                                    vi toàn cầu.</a></h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
                                                             <i class="far fa-comment-alt"></i>
-                                                            <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																	luận</a></span>
+                                                            <span class="ms-3">5 <a href="#"
+                                                                    class="stretched-link text-reset btn-link">Bình
+                                                                    luận</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -780,7 +1069,8 @@ Adv END -->
                             <!-- Card item START -->
                             <div class="col-sm-6 card-body border-right p-md-3">
                                 <div class="title-box-category">
-                                    <h3 class="parent-cate"><a href="" class="inner-title"><i class="fa fa-user-tie fa-fw me-2"></i>Doanh nhân</a></h3>
+                                    <h3 class="parent-cate"><a href="" class="inner-title"><i
+                                                class="fa fa-user-tie fa-fw me-2"></i>Doanh nhân</a></h3>
                                 </div>
                                 <div class="card ">
                                     <!-- Card img -->
@@ -790,14 +1080,15 @@ Adv END -->
                                             <!-- Card overlay bottom -->
                                             <div class="w-100 mt-auto">
                                                 <!-- Card category -->
-                                                <a href="#" class="badge bg-danger"><i class="fa fa-user-tie me-2 small fw-bold"></i>Doanh
-													nhân</a>
+                                                <a href="#" class="badge bg-danger"><i
+                                                        class="fa fa-user-tie me-2 small fw-bold"></i>Doanh
+                                                    nhân</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-body px-0 pt-3">
                                         <h4 class="card-title"><a href="post-single.html" class="btn-link text-reset fw-regular">Công ty của
-												tỷ phú Trần Bá Dương thành chủ mới của Emart</a></h4>
+                                                tỷ phú Trần Bá Dương thành chủ mới của Emart</a></h4>
                                         <p class="card-text">Thaco sẽ điều hành, quản trị và mở rộng hệ thống Emart tại Việt Nam sau khi chính thức thành chủ sở hữu mới của siêu thị này.
                                         </p>
                                         <!-- Card info -->
@@ -806,8 +1097,9 @@ Adv END -->
                                                 <div class="nav-link">
                                                     <div class="d-flex align-items-center position-relative">
                                                         <i class="far fa-comment-alt"></i>
-                                                        <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																luận</a></span>
+                                                        <span class="ms-3">5 <a href="#"
+                                                                class="stretched-link text-reset btn-link">Bình
+                                                                luận</a></span>
                                                     </div>
                                                 </div>
                                             </li>
@@ -819,13 +1111,16 @@ Adv END -->
                                 <div class="card mb-1">
                                     <div class="row g-3 card-body px-0 border-top">
                                         <h5><a href="post-single-5.html" class="btn-link stretched-link text-reset fw-regular">
-												Phó chủ tịch TP HCM: Doanh nghiệp đang tính toán đón lao động trở lại làm việc</a></h5>
+                                                Phó chủ tịch TP HCM: Doanh nghiệp đang tính toán đón lao động trở lại
+                                                làm việc</a></h5>
                                         <div class="col-4">
                                             <img class="rounded-3" src="assets/images/doanh-nhan/doanh-nhan-2.jpg" alt="">
                                         </div>
                                         <div class="col-8">
-                                            <h6><a href="post-single-5.html" class="text-reset">Theo bà Phan Thị Thắng, các hiệp hội, khu công
-													nghiệp đang tập hợp danh sách tuyển dụng để tổ chức đón người lao động trở lại làm việc</a>
+                                            <h6><a href="post-single-5.html" class="text-reset">Theo bà Phan Thị Thắng,
+                                                    các hiệp hội, khu công
+                                                    nghiệp đang tập hợp danh sách tuyển dụng để tổ chức đón người lao
+                                                    động trở lại làm việc</a>
                                             </h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
@@ -833,8 +1128,9 @@ Adv END -->
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
                                                             <i class="far fa-comment-alt"></i>
-                                                            <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																	luận</a></span>
+                                                            <span class="ms-3">5 <a href="#"
+                                                                    class="stretched-link text-reset btn-link">Bình
+                                                                    luận</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -848,21 +1144,23 @@ Adv END -->
                                 <div class="card mb-1">
                                     <div class="row g-3 card-body px-0 border-top">
                                         <h5><a href="post-single-5.html" class="btn-link stretched-link text-reset fw-regular">
-												CBRE: Giá căn hộ Hà Nội tăng 5-7% một năm trong 3 năm tới</a></h5>
+                                                CBRE: Giá căn hộ Hà Nội tăng 5-7% một năm trong 3 năm tới</a></h5>
                                         <div class="col-4">
                                             <img class="rounded-3" src="assets/images/doanh-nhan/doanh-nhan-3.jpg" alt="">
                                         </div>
                                         <div class="col-8">
-                                            <h6><a href="post-single-5.html" class="text-reset">CBRE dự báo mức giá sơ cấp căn hộ tại thị
-													trường Hà Nội tăng 5-7% một năm trong vòng 3 năm tới.</a></h6>
+                                            <h6><a href="post-single-5.html" class="text-reset">CBRE dự báo mức giá sơ
+                                                    cấp căn hộ tại thị
+                                                    trường Hà Nội tăng 5-7% một năm trong vòng 3 năm tới.</a></h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
                                                             <i class="far fa-comment-alt"></i>
-                                                            <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																	luận</a></span>
+                                                            <span class="ms-3">5 <a href="#"
+                                                                    class="stretched-link text-reset btn-link">Bình
+                                                                    luận</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -876,21 +1174,24 @@ Adv END -->
                                 <div class="card mb-1">
                                     <div class="row g-3 card-body px-0 border-top">
                                         <h5><a href="post-single-5.html" class="btn-link stretched-link text-reset fw-regular">
-												Trang sức Bảo Tín Minh Châu cho ngày 'Doanh nhân Việt Nam'</a></h5>
+                                                Trang sức Bảo Tín Minh Châu cho ngày 'Doanh nhân Việt Nam'</a></h5>
                                         <div class="col-4">
                                             <img class="rounded-3" src="assets/images/doanh-nhan/doanh-nhan-4.jpg" alt="">
                                         </div>
                                         <div class="col-8">
-                                            <h6><a href="post-single-5.html" class="text-reset">Bảo Tín Minh Châu ra mắt nhiều mẫu trang sức
-													độc đáo, tinh xảo và quà tặng hấp dẫn nhân ngày Doanh nhân Việt Nam 13/10.</a></h6>
+                                            <h6><a href="post-single-5.html" class="text-reset">Bảo Tín Minh Châu ra mắt
+                                                    nhiều mẫu trang sức
+                                                    độc đáo, tinh xảo và quà tặng hấp dẫn nhân ngày Doanh nhân Việt Nam
+                                                    13/10.</a></h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
                                                             <i class="far fa-comment-alt"></i>
-                                                            <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																	luận</a></span>
+                                                            <span class="ms-3">5 <a href="#"
+                                                                    class="stretched-link text-reset btn-link">Bình
+                                                                    luận</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -909,7 +1210,8 @@ Adv END -->
                     <div class="col-lg-3 mt-5 mt-lg-0 pt-3">
                         <!-- Social widget START -->
                         <div class="title-box-category">
-                            <h4 class="parent-cate"><a href="" class="inner-title"><i class="fa fa-globe-asia fa-fw me-2"></i>Mạng xã hội</a></h4>
+                            <h4 class="parent-cate"><a href="" class="inner-title"><i
+                                        class="fa fa-globe-asia fa-fw me-2"></i>Mạng xã hội</a></h4>
                         </div>
                         <div class="row g-2">
                             <ul class="nav text-white-force justify-content-between">
@@ -972,7 +1274,8 @@ Adv END -->
                     <div class="col-lg-8 border-right">
                         <!--Title-->
                         <div class="title-box-category">
-                            <h3 class="parent-cate"> <a href="category-entertaiment.html" class="inner-title"><i class="fas fa-grin-squint fa-fw me-2"></i>Giải trí</a></h3>
+                            <h3 class="parent-cate"> <a href="category-entertaiment.html" class="inner-title"><i
+                                        class="fas fa-grin-squint fa-fw me-2"></i>Giải trí</a></h3>
                             <div class="d-none d-sm-inline-block">
                                 <span class="sub-cate"> <a href="#" class="nav-link">V-Biz</a> </span>
                                 <span class="sub-cate"> <a href="#" class="nav-link">C-Biz</a> </span>
@@ -989,7 +1292,8 @@ Adv END -->
                                             <!-- Card overlay bottom -->
                                             <div class="w-100 mt-auto">
                                                 <!-- Card category -->
-                                                <a href="#" class="badge bg-danger"><i class="fas fa-circle me-2 small fw-bold"></i>Showbiz</a>
+                                                <a href="#" class="badge bg-danger"><i
+                                                        class="fas fa-circle me-2 small fw-bold"></i>Showbiz</a>
                                             </div>
                                         </div>
                                     </div>
@@ -998,7 +1302,7 @@ Adv END -->
                             <div class="col-sm-5">
                                 <div class="card-body px-0 pt-3">
                                     <h4 class="card-title"><a href="post-single.html" class="btn-link text-reset fw-regular">Tình cha
-											con phim 'Hương vị tình thân' lấy nước mắt khán giả</a></h4>
+                                            con phim 'Hương vị tình thân' lấy nước mắt khán giả</a></h4>
                                     <p class="card-text">Nam khóc khi biết ông Sinh là cha ruột nhưng giấu cô, khiến khán giả xúc động khi xem "Hương vị tình thân".</p>
                                     <!-- Card info -->
                                     <ul class="nav nav-divider align-items-center d-sm-inline-block">
@@ -1006,8 +1310,9 @@ Adv END -->
                                             <div class="nav-link">
                                                 <div class="d-flex align-items-center position-relative">
                                                     <i class="far fa-comment-alt"></i>
-                                                    <span class="ms-3">50 <a href="#" class="stretched-link text-reset btn-link">Bình
-															luận</a></span>
+                                                    <span class="ms-3">50 <a href="#"
+                                                            class="stretched-link text-reset btn-link">Bình
+                                                            luận</a></span>
                                                 </div>
                                             </div>
                                         </li>
@@ -1029,7 +1334,7 @@ Adv END -->
                                         </div>
                                         <div class="card-body px-0 pt-3">
                                             <h5 class="card-title"><a href="post-single.html" class="btn-link text-reset fw-regular">Phi Nhung
-													- ca sĩ đam mê diễn xuất</a></h5>
+                                                    - ca sĩ đam mê diễn xuất</a></h5>
                                             <h6 class="card-text">Ca sĩ Phi Nhung từng gây sốt khi đóng cặp Mạnh Quỳnh trong vở cải lương kinh điển "Lan và Điệp" thập niên 2000.</h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
@@ -1037,8 +1342,9 @@ Adv END -->
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
                                                             <i class="far fa-comment-alt"></i>
-                                                            <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																	luận</a></span>
+                                                            <span class="ms-3">5 <a href="#"
+                                                                    class="stretched-link text-reset btn-link">Bình
+                                                                    luận</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -1057,7 +1363,7 @@ Adv END -->
                                         </div>
                                         <div class="card-body px-0 pt-3">
                                             <h5 class="card-title"><a href="post-single.html" class="btn-link text-reset fw-regular">Hoài Linh
-													tiễn biệt bố</a></h5>
+                                                    tiễn biệt bố</a></h5>
                                             <h6 class="card-text">TP HCM - Nghệ sĩ Hoài Linh chu toàn tang lễ cho bố - ông Võ Tòa - sáng 8/10.
                                             </h6>
                                             <!-- Card info -->
@@ -1066,8 +1372,9 @@ Adv END -->
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
                                                             <i class="far fa-comment-alt"></i>
-                                                            <span class="ms-3">0 <a href="#" class="stretched-link text-reset btn-link">Bình
-																	luận</a></span>
+                                                            <span class="ms-3">0 <a href="#"
+                                                                    class="stretched-link text-reset btn-link">Bình
+                                                                    luận</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -1086,7 +1393,7 @@ Adv END -->
                                         </div>
                                         <div class="card-body px-0 pt-3">
                                             <h5 class="card-title"><a href="post-single.html" class="btn-link text-reset fw-regular">Mỹ nhân
-													phim hành động Hong Kong ngày ấy - bây giờ</a></h5>
+                                                    phim hành động Hong Kong ngày ấy - bây giờ</a></h5>
                                             <h6 class="card-text">
                                                 Lý Tái Phụng - "Thiên thần hành động" Hong Kong - độc thân sau hai lần đổ vỡ hôn nhân, Hồ Tuệ Trung vắng bóng màn ảnh.</h6>
                                             <!-- Card info -->
@@ -1095,8 +1402,9 @@ Adv END -->
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
                                                             <i class="far fa-comment-alt"></i>
-                                                            <span class="ms-3">20 <a href="#" class="stretched-link text-reset btn-link">Bình
-																	luận</a></span>
+                                                            <span class="ms-3">20 <a href="#"
+                                                                    class="stretched-link text-reset btn-link">Bình
+                                                                    luận</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -1117,15 +1425,16 @@ Adv END -->
                                     <div class="card">
                                         <div class="card-body px-0 pt-3">
                                             <h5 class="card-title"><a href="post-single.html" class="btn-link text-reset fw-regular">Lý do
-													'Squid Game' gây sốt</a></h5>
+                                                    'Squid Game' gây sốt</a></h5>
                                             <h6 class="card-text">Đạo diễn Hwang Dong Hyuk dành 13 năm lên ý tưởng và hoàn thành "Squid Game", mất sáu tháng để viết kịch bản cho riêng hai tập đầu.</h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
-                                                            <span class="ms-3"><a href="#" class="btn-link"><i class="far fa-comment-alt me-1"></i>
-																	5</a></span>
+                                                            <span class="ms-3"><a href="#" class="btn-link"><i
+                                                                        class="far fa-comment-alt me-1"></i>
+                                                                    5</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -1140,15 +1449,16 @@ Adv END -->
                                     <div class="card">
                                         <div class="card-body px-0 pt-3">
                                             <h5 class="card-title"><a href="post-single.html" class="btn-link text-reset fw-regular">'Vị' đoạt
-													giải quốc tế, bị cấm trong nước</a></h5>
+                                                    giải quốc tế, bị cấm trong nước</a></h5>
                                             <h6 class="card-text">"Vị" thắng Phim hay nhất, hạng mục Đạo diễn mới quốc tế ở Liên hoan phim Đài Bắc, sau khi bị cấm trong nước.</h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
-                                                            <span class="ms-3"><a href="#" class="btn-link"><i class="far fa-comment-alt me-1"></i>
-																	5</a></span>
+                                                            <span class="ms-3"><a href="#" class="btn-link"><i
+                                                                        class="far fa-comment-alt me-1"></i>
+                                                                    5</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -1163,7 +1473,7 @@ Adv END -->
                                     <div class="card">
                                         <div class="card-body px-0 pt-3">
                                             <h5 class="card-title"><a href="post-single.html" class="btn-link text-reset fw-regular">Á hậu
-													Thanh Tú sắp sinh con thứ hai</a></h5>
+                                                    Thanh Tú sắp sinh con thứ hai</a></h5>
                                             <h6 class="card-text">Ngô Thanh Thanh Tú - Á hậu 1 Hoa hậu Việt Nam 2016 - đang ở giai đoạn cuối thai kỳ con thứ hai.</h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
@@ -1171,7 +1481,7 @@ Adv END -->
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
                                                             <span class="ms-3"><a href="#" class="btn-link"><i
-																		class="far fa-comment-alt me-1"></i>5</a></span>
+                                                                        class="far fa-comment-alt me-1"></i>5</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -1186,7 +1496,7 @@ Adv END -->
                                     <div class="card">
                                         <div class="card-body px-0 pt-3">
                                             <h5 class="card-title"><a href="post-single.html" class="btn-link text-reset fw-regular">Người mẫu
-													21 tuổi đăng quang Miss Universe Ấn Độ</a></h5>
+                                                    21 tuổi đăng quang Miss Universe Ấn Độ</a></h5>
                                             <h6 class="card-text">Diễn viên - người mẫu Harnaaz Kaur Sandhu, 21 tuổi - đăng quang Hoa hậu Hoàn vũ Ấn Độ 2021. </h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
@@ -1194,7 +1504,7 @@ Adv END -->
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
                                                             <span class="ms-3"><a href="#" class="btn-link"><i
-																		class="far fa-comment-alt me-1"></i>5</a></span>
+                                                                        class="far fa-comment-alt me-1"></i>5</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -1212,8 +1522,9 @@ Adv END -->
                     <!-- Sidebar START -->
                     <div class="col-lg-4 mt-5 mt-lg-0">
                         <div class="title-box-category">
-                            <h3 class="parent-cate"> <a href="category-lifestyle.html" class="inner-title"><i class="fa fa-heart" aria-hidden="true"></i>
-								Life Style</a></h3>
+                            <h3 class="parent-cate"> <a href="category-lifestyle.html" class="inner-title"><i
+                                        class="fa fa-heart" aria-hidden="true"></i>
+                                    Life Style</a></h3>
                             <div class="d-none d-sm-inline-block">
                                 <span class="sub-cate"> <a href="#" class="nav-link">Tổ ấm</a> </span>
                                 <span class="sub-cate"> <a href="#" class="nav-link">Bài học sống</a></span>
@@ -1230,7 +1541,7 @@ Adv END -->
                                 </div>
                                 <div class="card-body px-0 pt-3">
                                     <h5 class="card-title"><a href="post-single.html" class="btn-link text-reset fw-regular">Mốt chơi hoa
-											bạch đàn của người Hà Nội </a></h5>
+                                            bạch đàn của người Hà Nội </a></h5>
                                     <h6 class="card-text">HÀ NỘI - Thú chơi hoa bạch đàn rộ lên như một trào lưu được nhiều người Hà Nội lựa chọn bởi sự mới lạ và mùi thơm dễ chịu.</h6>
                                     <!-- Card info -->
                                     <ul class="nav nav-divider align-items-center d-sm-inline-block">
@@ -1238,8 +1549,9 @@ Adv END -->
                                             <div class="nav-link">
                                                 <div class="d-flex align-items-center position-relative">
                                                     <i class="far fa-comment-alt"></i>
-                                                    <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-															luận</a></span>
+                                                    <span class="ms-3">5 <a href="#"
+                                                            class="stretched-link text-reset btn-link">Bình
+                                                            luận</a></span>
                                                 </div>
                                             </div>
                                         </li>
@@ -1252,21 +1564,24 @@ Adv END -->
                         <div class="card mb-1">
                             <div class="row g-3 card-body px-0 border-bottom">
                                 <h5><a href="post-single-5.html" class="btn-link stretched-link text-reset fw-regular">
-										Trào lưu thuê bạn trai một ngày</a></h5>
+                                        Trào lưu thuê bạn trai một ngày</a></h5>
                                 <div class="col-4">
                                     <img class="rounded-3" src="assets/images/doi-song/doi-song-2.jpg" alt="">
                                 </div>
                                 <div class="col-8">
-                                    <h6><a href="post-single-5.html" class="text-reset">Nhiều cô gái độc thân tại Trung Quốc tìm đến dịch
-											vụ thuê bạn trai một ngày để được trò chuyện và chia sẻ những áp lực trong cuộc sống.</a></h6>
+                                    <h6><a href="post-single-5.html" class="text-reset">Nhiều cô gái độc thân tại Trung
+                                            Quốc tìm đến dịch
+                                            vụ thuê bạn trai một ngày để được trò chuyện và chia sẻ những áp lực trong
+                                            cuộc sống.</a></h6>
                                     <!-- Card info -->
                                     <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                         <li class="nav-item">
                                             <div class="nav-link">
                                                 <div class="d-flex align-items-center position-relative">
                                                     <i class="far fa-comment-alt"></i>
-                                                    <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-															luận</a></span>
+                                                    <span class="ms-3">5 <a href="#"
+                                                            class="stretched-link text-reset btn-link">Bình
+                                                            luận</a></span>
                                                 </div>
                                             </div>
                                         </li>
@@ -1280,22 +1595,25 @@ Adv END -->
                         <div class="card mb-1">
                             <div class="row g-3 card-body px-0 border-bottom">
                                 <h5><a href="post-single-5.html" class="btn-link stretched-link text-reset fw-regular">
-										Chàng trai Sài Gòn cưới vợ người Mông nhờ bị mắc kẹt</a></h5>
+                                        Chàng trai Sài Gòn cưới vợ người Mông nhờ bị mắc kẹt</a></h5>
                                 <div class="col-4">
                                     <img class="rounded-3" src="assets/images/doi-song/doi-song-3.jpg" alt="">
                                 </div>
                                 <div class="col-8">
-                                    <h6><a href="post-single-5.html" class="text-reset">LAI CHÂU - Lên thăm bạn gái dịp 30/4, Thanh Ngọc
-											không về được vì dịch Covid-19 bùng phát nên quyết định ở lại bản Sin Suối Hồ lập nghiệp và kết
-											hôn.</a></h6>
+                                    <h6><a href="post-single-5.html" class="text-reset">LAI CHÂU - Lên thăm bạn gái dịp
+                                            30/4, Thanh Ngọc
+                                            không về được vì dịch Covid-19 bùng phát nên quyết định ở lại bản Sin Suối
+                                            Hồ lập nghiệp và kết
+                                            hôn.</a></h6>
                                     <!-- Card info -->
                                     <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                         <li class="nav-item">
                                             <div class="nav-link">
                                                 <div class="d-flex align-items-center position-relative">
                                                     <i class="far fa-comment-alt"></i>
-                                                    <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-															luận</a></span>
+                                                    <span class="ms-3">5 <a href="#"
+                                                            class="stretched-link text-reset btn-link">Bình
+                                                            luận</a></span>
                                                 </div>
                                             </div>
                                         </li>
@@ -1309,23 +1627,25 @@ Adv END -->
                         <div class="card mb-1">
                             <div class="row g-3">
                                 <h5><a href="post-single-5.html" class="btn-link stretched-link text-reset fw-regular">
-										Cụ bà 97 tuổi lần đầu chụp ảnh cưới</a></h5>
+                                        Cụ bà 97 tuổi lần đầu chụp ảnh cưới</a></h5>
                                 <div class="col-4">
                                     <img class="rounded-3" src="assets/images/doi-song/doi-song-4.jpg" alt="">
                                 </div>
                                 <div class="col-8">
-                                    <h6><a href="post-single-5.html" class="text-reset">MỸ - Khi vợ chồng Royce và Frankie King kỷ niệm 77
-											năm ngày cưới, nhân viên viện tế bần hỏi ảnh cưới, nhưng ông bà không có.
+                                    <h6><a href="post-single-5.html" class="text-reset">MỸ - Khi vợ chồng Royce và
+                                            Frankie King kỷ niệm 77
+                                            năm ngày cưới, nhân viên viện tế bần hỏi ảnh cưới, nhưng ông bà không có.
 
-										</a></h6>
+                                        </a></h6>
                                     <!-- Card info -->
                                     <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                         <li class="nav-item">
                                             <div class="nav-link">
                                                 <div class="d-flex align-items-center position-relative">
                                                     <i class="far fa-comment-alt"></i>
-                                                    <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-															luận</a></span>
+                                                    <span class="ms-3">5 <a href="#"
+                                                            class="stretched-link text-reset btn-link">Bình
+                                                            luận</a></span>
                                                 </div>
                                             </div>
                                         </li>
@@ -1372,7 +1692,8 @@ Adv END -->
                             <!-- Card item START -->
                             <div class="col-sm-6 p-md-3">
                                 <div class="title-box-category">
-                                    <h3 class="parent-cate"><a href="" class="inner-title"><i class="fas fa-music fa-fw me-2"></i>Âm Nhạc</a></h3>
+                                    <h3 class="parent-cate"><a href="" class="inner-title"><i
+                                                class="fas fa-music fa-fw me-2"></i>Âm Nhạc</a></h3>
                                 </div>
                                 <div class="card">
                                     <!-- Card img -->
@@ -1382,15 +1703,16 @@ Adv END -->
                                             <!-- Card overlay bottom -->
                                             <div class="w-100 mt-auto">
                                                 <!-- Card category -->
-                                                <a href="#" class="badge bg-danger"><i class="fas fa-user-tie me-2 small fw-bold"></i>Chính
-													khách</a>
+                                                <a href="#" class="badge bg-danger"><i
+                                                        class="fas fa-user-tie me-2 small fw-bold"></i>Chính
+                                                    khách</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-body px-0 pt-3">
                                         <h4 class="card-title"><a href="post-single.html" class="btn-link text-reset fw-regular">Chính khách
-												Việt và hình ảnh trước công chúng
-											</a></h4>
+                                                Việt và hình ảnh trước công chúng
+                                            </a></h4>
                                         <p class="card-text">Sau 30/9, TP HCM sẽ dỡ các chốt nội đô, bỏ giấy đi đường, người dân có thể đi lại nhưng không tự ý ra khỏi thành phố, theo Phó chủ tịch thành phố Lê Hòa Bình.</p>
                                         <!-- Card info -->
                                         <ul class="nav nav-divider align-items-center d-sm-inline-block">
@@ -1398,8 +1720,9 @@ Adv END -->
                                                 <div class="nav-link">
                                                     <div class="d-flex align-items-center position-relative">
                                                         <i class="far fa-comment-alt"></i>
-                                                        <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																luận</a></span>
+                                                        <span class="ms-3">5 <a href="#"
+                                                                class="stretched-link text-reset btn-link">Bình
+                                                                luận</a></span>
                                                     </div>
                                                 </div>
                                             </li>
@@ -1411,26 +1734,30 @@ Adv END -->
                                 <div class="card mb-1">
                                     <div class="row g-3 card-body px-0 border-top">
                                         <h5><a href="post-single-5.html" class="btn-link stretched-link text-reset fw-regular">
-												Chuyến thăm đa mục tiêu, với nhiều ý nghĩa quan trọng</a></h5>
+                                                Chuyến thăm đa mục tiêu, với nhiều ý nghĩa quan trọng</a></h5>
                                         <div class="col-4">
                                             <img class="rounded-3" src="assets/images/chinh-khach/chinh-khach-2.jpg" alt="">
                                         </div>
                                         <div class="col-8">
-                                            <h6><a href="post-single-5.html" class="text-reset">Nhân dịp Chủ tịch nước Nguyễn Xuân Phúc thăm
-													chính thức Cuba và tham dự Phiên thảo luận chung cấp cao Đại hội đồng Liên Hợp Quốc (ĐHĐ LHQ)
-													khóa 76 từ ngày 18 đến ngày 24/9/2021, Thứ trưởng Bộ Ngoại giao Đặng Hoàng Giang đã trả lời
-													phỏng vấn báo chí về chuyến đi của Chủ tịch nước.
+                                            <h6><a href="post-single-5.html" class="text-reset">Nhân dịp Chủ tịch nước
+                                                    Nguyễn Xuân Phúc thăm
+                                                    chính thức Cuba và tham dự Phiên thảo luận chung cấp cao Đại hội
+                                                    đồng Liên Hợp Quốc (ĐHĐ LHQ)
+                                                    khóa 76 từ ngày 18 đến ngày 24/9/2021, Thứ trưởng Bộ Ngoại giao Đặng
+                                                    Hoàng Giang đã trả lời
+                                                    phỏng vấn báo chí về chuyến đi của Chủ tịch nước.
 
 
-												</a></h6>
+                                                </a></h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
                                                             <i class="far fa-comment-alt"></i>
-                                                            <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																	luận</a></span>
+                                                            <span class="ms-3">5 <a href="#"
+                                                                    class="stretched-link text-reset btn-link">Bình
+                                                                    luận</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -1444,23 +1771,27 @@ Adv END -->
                                 <div class="card mb-1">
                                     <div class="row g-3 card-body px-0 border-top">
                                         <h5><a href="post-single-5.html" class="btn-link stretched-link text-reset fw-regular">
-												Thủ tướng điện đàm với Đặc phái viên của Tổng thống Hoa Kỳ về biến đổi khí hậu</a></h5>
+                                                Thủ tướng điện đàm với Đặc phái viên của Tổng thống Hoa Kỳ về biến đổi
+                                                khí hậu</a></h5>
                                         <div class="col-4">
                                             <img class="rounded-3" src="assets/images/chinh-khach/chinh-khach-3.jpg" alt="">
                                         </div>
                                         <div class="col-8">
-                                            <h6><a href="post-single-5.html" class="text-reset">Ngày 08/10 tại trụ sở Chính phủ, Thủ tướng
-													Chính phủ Phạm Minh Chính đã có cuộc điện đàm với Đặc phái viên của Tổng thống Hoa Kỳ về Biến
-													đổi khí hậu John Kerry.
-												</a></h6>
+                                            <h6><a href="post-single-5.html" class="text-reset">Ngày 08/10 tại trụ sở
+                                                    Chính phủ, Thủ tướng
+                                                    Chính phủ Phạm Minh Chính đã có cuộc điện đàm với Đặc phái viên của
+                                                    Tổng thống Hoa Kỳ về Biến
+                                                    đổi khí hậu John Kerry.
+                                                </a></h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
                                                             <i class="far fa-comment-alt"></i>
-                                                            <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																	luận</a></span>
+                                                            <span class="ms-3">5 <a href="#"
+                                                                    class="stretched-link text-reset btn-link">Bình
+                                                                    luận</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -1474,23 +1805,27 @@ Adv END -->
                                 <div class="card mb-1">
                                     <div class="row g-3 card-body px-0 border-top">
                                         <h5><a href="post-single-5.html" class="btn-link stretched-link text-reset fw-regular">
-												Đẩy mạnh chủ nghĩa đa phương và hợp tác quốc tế
-											</a></h5>
+                                                Đẩy mạnh chủ nghĩa đa phương và hợp tác quốc tế
+                                            </a></h5>
                                         <div class="col-4">
                                             <img class="rounded-3" src="assets/images/chinh-khach/chinh-khach-4.jpg" alt="">
                                         </div>
                                         <div class="col-8">
-                                            <h6><a href="post-single-5.html" class="text-reset">Bộ trưởng Bùi Thanh Sơn cho rằng, hơn lúc nào
-													hết, cần đẩy mạnh chủ nghĩa đa phương và hợp tác quốc tế nhằm kiểm soát dịch bệnh, nâng cao
-													khả năng thích ứng và đẩy nhanh quá trình phục hồi kinh tế trên phạm vi toàn cầu.</a></h6>
+                                            <h6><a href="post-single-5.html" class="text-reset">Bộ trưởng Bùi Thanh Sơn
+                                                    cho rằng, hơn lúc nào
+                                                    hết, cần đẩy mạnh chủ nghĩa đa phương và hợp tác quốc tế nhằm kiểm
+                                                    soát dịch bệnh, nâng cao
+                                                    khả năng thích ứng và đẩy nhanh quá trình phục hồi kinh tế trên phạm
+                                                    vi toàn cầu.</a></h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
                                                             <i class="far fa-comment-alt"></i>
-                                                            <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																	luận</a></span>
+                                                            <span class="ms-3">5 <a href="#"
+                                                                    class="stretched-link text-reset btn-link">Bình
+                                                                    luận</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -1505,7 +1840,8 @@ Adv END -->
                             <!-- Card item START -->
                             <div class="col-sm-6 p-md-3">
                                 <div class="title-box-category">
-                                    <h3 class="parent-cate"><a href="" class="inner-title"><i class="fa fa-film fa-fw me-2"></i>Điện ảnh</a></h3>
+                                    <h3 class="parent-cate"><a href="" class="inner-title"><i
+                                                class="fa fa-film fa-fw me-2"></i>Điện ảnh</a></h3>
                                 </div>
                                 <div class="card ">
                                     <!-- Card img -->
@@ -1515,14 +1851,15 @@ Adv END -->
                                             <!-- Card overlay bottom -->
                                             <div class="w-100 mt-auto">
                                                 <!-- Card category -->
-                                                <a href="#" class="badge bg-danger"><i class="fa fa-user-tie me-2 small fw-bold"></i>Doanh
-													nhân</a>
+                                                <a href="#" class="badge bg-danger"><i
+                                                        class="fa fa-user-tie me-2 small fw-bold"></i>Doanh
+                                                    nhân</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-body px-0 pt-3">
                                         <h4 class="card-title"><a href="post-single.html" class="btn-link text-reset fw-regular">Công ty của
-												tỷ phú Trần Bá Dương thành chủ mới của Emart</a></h4>
+                                                tỷ phú Trần Bá Dương thành chủ mới của Emart</a></h4>
                                         <p class="card-text">Thaco sẽ điều hành, quản trị và mở rộng hệ thống Emart tại Việt Nam sau khi chính thức thành chủ sở hữu mới của siêu thị này.
                                         </p>
                                         <!-- Card info -->
@@ -1531,8 +1868,9 @@ Adv END -->
                                                 <div class="nav-link">
                                                     <div class="d-flex align-items-center position-relative">
                                                         <i class="far fa-comment-alt"></i>
-                                                        <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																luận</a></span>
+                                                        <span class="ms-3">5 <a href="#"
+                                                                class="stretched-link text-reset btn-link">Bình
+                                                                luận</a></span>
                                                     </div>
                                                 </div>
                                             </li>
@@ -1544,13 +1882,16 @@ Adv END -->
                                 <div class="card mb-1">
                                     <div class="row g-3 card-body px-0 border-top">
                                         <h5><a href="post-single-5.html" class="btn-link stretched-link text-reset fw-regular">
-												Phó chủ tịch TP HCM: Doanh nghiệp đang tính toán đón lao động trở lại làm việc</a></h5>
+                                                Phó chủ tịch TP HCM: Doanh nghiệp đang tính toán đón lao động trở lại
+                                                làm việc</a></h5>
                                         <div class="col-4">
                                             <img class="rounded-3" src="assets/images/doanh-nhan/doanh-nhan-2.jpg" alt="">
                                         </div>
                                         <div class="col-8">
-                                            <h6><a href="post-single-5.html" class="text-reset">Theo bà Phan Thị Thắng, các hiệp hội, khu công
-													nghiệp đang tập hợp danh sách tuyển dụng để tổ chức đón người lao động trở lại làm việc</a>
+                                            <h6><a href="post-single-5.html" class="text-reset">Theo bà Phan Thị Thắng,
+                                                    các hiệp hội, khu công
+                                                    nghiệp đang tập hợp danh sách tuyển dụng để tổ chức đón người lao
+                                                    động trở lại làm việc</a>
                                             </h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
@@ -1558,8 +1899,9 @@ Adv END -->
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
                                                             <i class="far fa-comment-alt"></i>
-                                                            <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																	luận</a></span>
+                                                            <span class="ms-3">5 <a href="#"
+                                                                    class="stretched-link text-reset btn-link">Bình
+                                                                    luận</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -1573,21 +1915,23 @@ Adv END -->
                                 <div class="card mb-1">
                                     <div class="row g-3 card-body px-0 border-top">
                                         <h5><a href="post-single-5.html" class="btn-link stretched-link text-reset fw-regular">
-												CBRE: Giá căn hộ Hà Nội tăng 5-7% một năm trong 3 năm tới</a></h5>
+                                                CBRE: Giá căn hộ Hà Nội tăng 5-7% một năm trong 3 năm tới</a></h5>
                                         <div class="col-4">
                                             <img class="rounded-3" src="assets/images/doanh-nhan/doanh-nhan-3.jpg" alt="">
                                         </div>
                                         <div class="col-8">
-                                            <h6><a href="post-single-5.html" class="text-reset">CBRE dự báo mức giá sơ cấp căn hộ tại thị
-													trường Hà Nội tăng 5-7% một năm trong vòng 3 năm tới.</a></h6>
+                                            <h6><a href="post-single-5.html" class="text-reset">CBRE dự báo mức giá sơ
+                                                    cấp căn hộ tại thị
+                                                    trường Hà Nội tăng 5-7% một năm trong vòng 3 năm tới.</a></h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
                                                             <i class="far fa-comment-alt"></i>
-                                                            <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																	luận</a></span>
+                                                            <span class="ms-3">5 <a href="#"
+                                                                    class="stretched-link text-reset btn-link">Bình
+                                                                    luận</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -1601,21 +1945,24 @@ Adv END -->
                                 <div class="card mb-1">
                                     <div class="row g-3 card-body px-0 border-top">
                                         <h5><a href="post-single-5.html" class="btn-link stretched-link text-reset fw-regular">
-												Trang sức Bảo Tín Minh Châu cho ngày 'Doanh nhân Việt Nam'</a></h5>
+                                                Trang sức Bảo Tín Minh Châu cho ngày 'Doanh nhân Việt Nam'</a></h5>
                                         <div class="col-4">
                                             <img class="rounded-3" src="assets/images/doanh-nhan/doanh-nhan-4.jpg" alt="">
                                         </div>
                                         <div class="col-8">
-                                            <h6><a href="post-single-5.html" class="text-reset">Bảo Tín Minh Châu ra mắt nhiều mẫu trang sức
-													độc đáo, tinh xảo và quà tặng hấp dẫn nhân ngày Doanh nhân Việt Nam 13/10.</a></h6>
+                                            <h6><a href="post-single-5.html" class="text-reset">Bảo Tín Minh Châu ra mắt
+                                                    nhiều mẫu trang sức
+                                                    độc đáo, tinh xảo và quà tặng hấp dẫn nhân ngày Doanh nhân Việt Nam
+                                                    13/10.</a></h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
                                                             <i class="far fa-comment-alt"></i>
-                                                            <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																	luận</a></span>
+                                                            <span class="ms-3">5 <a href="#"
+                                                                    class="stretched-link text-reset btn-link">Bình
+                                                                    luận</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -1668,8 +2015,9 @@ Adv END -->
                     <div class="col-lg-9">
                         <!-- Entertainment START -->
                         <div class="title-box-category">
-                            <h3 class="parent-cate"> <a href="categorys-travel.html" class="inner-title"><i class="fas fa-suitcase-rolling" aria-hidden="true"></i>
-								Du lịch</a></h3>
+                            <h3 class="parent-cate"> <a href="categorys-travel.html" class="inner-title"><i
+                                        class="fas fa-suitcase-rolling" aria-hidden="true"></i>
+                                    Du lịch</a></h3>
                             <div class="d-none d-sm-inline-block">
                                 <span class="sub-cate"> <a href="#" class="nav-link">Điểm đến</a> </span>
                                 <span class="sub-cate"> <a href="#" class="nav-link">Dấu chân</a> </span>
@@ -1691,13 +2039,13 @@ Adv END -->
                                             <div class="w-100 mt-auto">
                                                 <!-- Card category -->
                                                 <a href="#" class="badge bg-danger"><i
-														class="fas fa-plane-departure me-2 small fw-bold"></i>Travel</a>
+                                                        class="fas fa-plane-departure me-2 small fw-bold"></i>Travel</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-body px-0 pt-3">
                                         <h4 class="card-title"><a href="post-single.html" class="btn-link text-reset fw-regular">Một tháng
-												tận hưởng mùa vàng Cao Bằng</a></h4>
+                                                tận hưởng mùa vàng Cao Bằng</a></h4>
                                         <p class="card-text">Blogger Hà Cương dành thời gian một tháng qua ghi lại vẻ đẹp mùa lúa chín Cao Bằng, từ thung lũng Phong Nậm cho đến ruộng bậc thang ở Hưng Đạo.</p>
                                         <!-- Card info -->
                                         <ul class="nav nav-divider align-items-center d-sm-inline-block">
@@ -1705,8 +2053,9 @@ Adv END -->
                                                 <div class="nav-link">
                                                     <div class="d-flex align-items-center position-relative">
                                                         <i class="far fa-comment-alt"></i>
-                                                        <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																luận</a></span>
+                                                        <span class="ms-3">5 <a href="#"
+                                                                class="stretched-link text-reset btn-link">Bình
+                                                                luận</a></span>
                                                     </div>
                                                 </div>
                                             </li>
@@ -1723,15 +2072,17 @@ Adv END -->
                                 <div class="card mb-1">
                                     <div class="row g-3 card-body px-0 border-bottom">
                                         <h5><a href="post-single-5.html" class="btn-link stretched-link text-reset fw-regular">Nhiều khách
-												Hà Nội đi nghỉ dưỡng ngoại tỉnh</a></h5>
+                                                Hà Nội đi nghỉ dưỡng ngoại tỉnh</a></h5>
                                         <div class="col-4">
                                             <img class="rounded-3" src="assets/images/du-lich/du-lich-2.jpg" alt="">
                                         </div>
                                         <div class="col-8">
 
-                                            <h6><a href="post-single-5.html" class="text-reset">Sau khi mở đón khách ngoại tỉnh, nhiều khu
-													nghỉ dưỡng ở Hoà Bình kín phòng vào cuối tuần, thậm chí có cả booking tới cuối năm, đa phần
-													khách từ Hà Nội.</a></h6>
+                                            <h6><a href="post-single-5.html" class="text-reset">Sau khi mở đón khách
+                                                    ngoại tỉnh, nhiều khu
+                                                    nghỉ dưỡng ở Hoà Bình kín phòng vào cuối tuần, thậm chí có cả
+                                                    booking tới cuối năm, đa phần
+                                                    khách từ Hà Nội.</a></h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
@@ -1739,8 +2090,9 @@ Adv END -->
                                                         <div class="d-flex align-items-center position-relative">
 
                                                             <i class="far fa-comment-alt"></i>
-                                                            <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																	luận</a></span>
+                                                            <span class="ms-3">5 <a href="#"
+                                                                    class="stretched-link text-reset btn-link">Bình
+                                                                    luận</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -1754,16 +2106,18 @@ Adv END -->
                                 <div class="card mb-1">
                                     <div class="row g-3 card-body px-0 border-bottom">
                                         <h5><a href="post-single-5.html" class="btn-link stretched-link text-reset fw-regular">
-												Cụ ông 81 tuổi leo gần 300 ngọn núi</a></h5>
+                                                Cụ ông 81 tuổi leo gần 300 ngọn núi</a></h5>
                                         <div class="col-4">
                                             <img class="rounded-3" src="assets/images/du-lich/du-lich-3.jpg" alt="">
                                         </div>
                                         <div class="col-8">
 
-                                            <h6><a href="post-single-5.html" class="text-reset">SCOTLAND - Sau khi vợ phải ở bệnh viện 24/24
-													với người chăm sóc riêng, ông Gardner suy sụp tinh thần và tự đặt thách thức leo hết núi ở
-													Scotland.
-												</a></h6>
+                                            <h6><a href="post-single-5.html" class="text-reset">SCOTLAND - Sau khi vợ
+                                                    phải ở bệnh viện 24/24
+                                                    với người chăm sóc riêng, ông Gardner suy sụp tinh thần và tự đặt
+                                                    thách thức leo hết núi ở
+                                                    Scotland.
+                                                </a></h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
@@ -1771,8 +2125,9 @@ Adv END -->
                                                         <div class="d-flex align-items-center position-relative">
 
                                                             <i class="far fa-comment-alt"></i>
-                                                            <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																	luận</a></span>
+                                                            <span class="ms-3">5 <a href="#"
+                                                                    class="stretched-link text-reset btn-link">Bình
+                                                                    luận</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -1786,14 +2141,15 @@ Adv END -->
                                 <div class="card mb-1">
                                     <div class="row g-3">
                                         <h5><a href="post-single-5.html" class="btn-link stretched-link text-reset fw-regular">
-												Làm gì khi đến sân bay và phát hiện đã trễ chuyến?</a></h5>
+                                                Làm gì khi đến sân bay và phát hiện đã trễ chuyến?</a></h5>
                                         <div class="col-4">
                                             <img class="rounded-3" src="assets/images/du-lich/du-lich-4.jpg" alt="">
                                         </div>
                                         <div class="col-8">
 
-                                            <h6><a href="post-single-5.html" class="text-reset">Đến sân bay sau cuộc gọi cuối cùng, quầy làm
-													thủ tục đóng, bạn hãy chạy thật nhanh đến cổng lên máy bay.</a></h6>
+                                            <h6><a href="post-single-5.html" class="text-reset">Đến sân bay sau cuộc gọi
+                                                    cuối cùng, quầy làm
+                                                    thủ tục đóng, bạn hãy chạy thật nhanh đến cổng lên máy bay.</a></h6>
                                             <!-- Card info -->
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
@@ -1801,8 +2157,9 @@ Adv END -->
                                                         <div class="d-flex align-items-center position-relative">
 
                                                             <i class="far fa-comment-alt"></i>
-                                                            <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																	luận</a></span>
+                                                            <span class="ms-3">5 <a href="#"
+                                                                    class="stretched-link text-reset btn-link">Bình
+                                                                    luận</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -1822,7 +2179,9 @@ Adv END -->
                         <div class="row">
                             <div class="col-12 my-3">
                                 <div class="title-box-category">
-                                    <h3 class="parent-cate"> <a href="categorys-talks.html" class="inner-title"><i class="fas fa-utensils fa-fw me-2" aria-hidden="true"></i>Ẩm thực</a></h3>
+                                    <h3 class="parent-cate"> <a href="categorys-talks.html" class="inner-title"><i
+                                                class="fas fa-utensils fa-fw me-2" aria-hidden="true"></i>Ẩm thực</a>
+                                    </h3>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -1838,8 +2197,9 @@ Adv END -->
                                                         <li class="nav-item">với <a href="#">Chef Dzũng</a> </li>
                                                     </ul>
                                                     <h4 class="card-title"><a href="post-single-6.html" class="stretched-link text-reset">Sườn xào
-															chua ngọt khác với thường ngày</a></h4>
-                                                    <p class="m-0">Làm món sườn xào tại nhà cùng với đầu bếp khách sạn 5 sao</p>
+                                                            chua ngọt khác với thường ngày</a></h4>
+                                                    <p class="m-0">Làm món sườn xào tại nhà cùng với đầu bếp khách sạn 5 sao
+                                                    </p>
                                                 </div>
                                                 <img src="assets/images/Foods/cach-lam-suon-xao-chua-ngot.jpg" class="card-img-bottom" alt="Card image">
                                             </div>
@@ -1854,8 +2214,9 @@ Adv END -->
                                                         <li class="nav-item">với <a href="#">Chef Dzũng</a> </li>
                                                     </ul>
                                                     <h4 class="card-title"><a href="post-single-6.html" class="stretched-link text-reset">Sườn xào
-															chua ngọt khác với thường ngày</a></h4>
-                                                    <p class="m-0">Làm món sườn xào tại nhà cùng với đầu bếp khách sạn 5 sao</p>
+                                                            chua ngọt khác với thường ngày</a></h4>
+                                                    <p class="m-0">Làm món sườn xào tại nhà cùng với đầu bếp khách sạn 5 sao
+                                                    </p>
                                                 </div>
                                                 <img src="assets/images/Foods/cach-lam-suon-xao-chua-ngot.jpg" class="card-img-bottom" alt="Card image">
                                             </div>
@@ -1870,8 +2231,9 @@ Adv END -->
                                                         <li class="nav-item">với <a href="#">Chef Dzũng</a> </li>
                                                     </ul>
                                                     <h4 class="card-title"><a href="post-single-6.html" class="stretched-link text-reset">Sườn xào
-															chua ngọt khác với thường ngày</a></h4>
-                                                    <p class="m-0">Làm món sườn xào tại nhà cùng với đầu bếp khách sạn 5 sao</p>
+                                                            chua ngọt khác với thường ngày</a></h4>
+                                                    <p class="m-0">Làm món sườn xào tại nhà cùng với đầu bếp khách sạn 5 sao
+                                                    </p>
                                                 </div>
                                                 <img src="assets/images/Foods/cach-lam-suon-xao-chua-ngot.jpg" class="card-img-bottom" alt="Card image">
                                             </div>
@@ -1886,8 +2248,9 @@ Adv END -->
                                                         <li class="nav-item">với <a href="#">Chef Dzũng</a> </li>
                                                     </ul>
                                                     <h4 class="card-title"><a href="post-single-6.html" class="stretched-link text-reset">Sườn xào
-															chua ngọt khác với thường ngày</a></h4>
-                                                    <p class="m-0">Làm món sườn xào tại nhà cùng với đầu bếp khách sạn 5 sao</p>
+                                                            chua ngọt khác với thường ngày</a></h4>
+                                                    <p class="m-0">Làm món sườn xào tại nhà cùng với đầu bếp khách sạn 5 sao
+                                                    </p>
                                                 </div>
                                                 <img src="assets/images/Foods/cach-lam-suon-xao-chua-ngot.jpg" class="card-img-bottom" alt="Card image">
                                             </div>
@@ -1902,8 +2265,9 @@ Adv END -->
                                                         <li class="nav-item">với <a href="#">Chef Dzũng</a> </li>
                                                     </ul>
                                                     <h4 class="card-title"><a href="post-single-6.html" class="stretched-link text-reset">Sườn xào
-															chua ngọt khác với thường ngày</a></h4>
-                                                    <p class="m-0">Làm món sườn xào tại nhà cùng với đầu bếp khách sạn 5 sao</p>
+                                                            chua ngọt khác với thường ngày</a></h4>
+                                                    <p class="m-0">Làm món sườn xào tại nhà cùng với đầu bếp khách sạn 5 sao
+                                                    </p>
                                                 </div>
                                                 <img src="assets/images/Foods/cach-lam-suon-xao-chua-ngot.jpg" class="card-img-bottom" alt="Card image">
                                             </div>
@@ -1927,16 +2291,23 @@ Adv END -->
                                     </h3>
                                 </div>
                                 <ul class="list-inline">
-                                    <li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Du lịch</a></li>
-                                    <li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">Doanh nghiệp</a></li>
-                                    <li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Công nghệ</a></li>
-                                    <li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Thể thao</a></li>
-                                    <li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Đời sống</a></li>
+                                    <li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Du
+                                            lịch</a></li>
+                                    <li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">Doanh
+                                            nghiệp</a></li>
+                                    <li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Công
+                                            nghệ</a></li>
+                                    <li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Thể
+                                            thao</a></li>
+                                    <li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Đời
+                                            sống</a></li>
                                     <li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Vaccine</a></li>
-                                    <li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">Giải trí</a></li>
+                                    <li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">Giải
+                                            trí</a></li>
                                     <li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Video</a></li>
                                     <li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Covid-19</a></li>
-                                    <li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Tâm sự</a></li>
+                                    <li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Tâm sự</a>
+                                    </li>
                                 </ul>
                             </div>
                             <!-- Newsletter START -->
@@ -1979,7 +2350,8 @@ Adv END -->
                     <div class="col-lg-12 bg-light pt-3 border-radius-5">
                         <div class="d-sm-flex justify-content-between align-items-center">
                             <div class="title-box-category">
-                                <h3 class="parent-cate"><a href="categorys-video.html" class="inner-title"><i class="bi bi-camera-reels-fill me-2" aria-hidden="true"></i>Video</a> </h3>
+                                <h3 class="parent-cate"><a href="categorys-video.html" class="inner-title"><i
+                                            class="bi bi-camera-reels-fill me-2" aria-hidden="true"></i>Video</a> </h3>
                                 <div class="d-none d-sm-inline-block">
                                     <span class="sub-cate"> <a href="#" class="nav-link">Thời sự</a> </span>
                                     <span class="sub-cate"> <a href="#" class="nav-link">Nhịp sống</a> </span>
@@ -1990,7 +2362,8 @@ Adv END -->
 
                                 </div>
                             </div>
-                            <a href="https://www.youtube.com/channel/UC3NiDYICK8caLNqd8bEzaSw" class="btn btn-sm bg-youtube" target="_blank"><i class="bi bi-youtube me-2 align-middle"></i>Theo dõi trên YouTube</a>
+                            <a href="https://www.youtube.com/channel/UC3NiDYICK8caLNqd8bEzaSw" class="btn btn-sm bg-youtube" target="_blank"><i
+                                    class="bi bi-youtube me-2 align-middle"></i>Theo dõi trên YouTube</a>
                         </div>
                         <!-- Title -->
 
@@ -2001,17 +2374,19 @@ Adv END -->
                                     <div class="video">
                                         <!--Video poster-->
                                         <video controls crossorigin playsinline poster="assets/images/bigthumbnail.png" id="player">
-                                                    <!-- Video files -->
-                                                    <source src="assets/video/Hồ sơ pandora _ VTV24.mp4" type="video/mp4" size="720">
-                                                    <!-- Caption files -->
-                                                    <track kind="captions" label="English" srclang="en"
-                                                        src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt" default>
-                                                    <track kind="captions" label="Français" srclang="fr"
-                                                        src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
-        
-                                                    <!-- Fallback for browsers that don't support the <video> element -->
-                                                    <a href="assets/video/Hồ sơ pandora _ VTV24.mp4" download>Download</a>
-                                                </video>
+                                            <!-- Video files -->
+                                            <source src="assets/video/Hồ sơ pandora _ VTV24.mp4" type="video/mp4"
+                                                size="720">
+                                            <!-- Caption files -->
+                                            <track kind="captions" label="English" srclang="en"
+                                                src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
+                                                default>
+                                            <track kind="captions" label="Français" srclang="fr"
+                                                src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
+
+                                            <!-- Fallback for browsers that don't support the <video> element -->
+                                            <a href="assets/video/Hồ sơ pandora _ VTV24.mp4" download>Download</a>
+                                        </video>
                                         <div class="title">
                                             <h3>Video 1</h3>
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
@@ -2019,8 +2394,9 @@ Adv END -->
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
                                                             <i class="far fa-comment-alt"></i>
-                                                            <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-                                                                            luận</a></span>
+                                                            <span class="ms-3">5 <a href="#"
+                                                                    class="stretched-link text-reset btn-link">Bình
+                                                                    luận</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -2036,15 +2412,16 @@ Adv END -->
                                 <div class="video-list">
                                     <div class="vid active">
                                         <video src="assets/video/Hồ sơ pandora _ VTV24.mp4" type="video/mp4" size="720" muted>
-                                                </video>
+                                        </video>
                                         <div class="title">
                                             <h5>Video 1</h5>
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
-                                                            <span class="ms-3"><a href="#" class="btn-link"><i class="far fa-comment-alt me-1"></i>
-                                                                            5</a></span>
+                                                            <span class="ms-3"><a href="#" class="btn-link"><i
+                                                                        class="far fa-comment-alt me-1"></i>
+                                                                    5</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -2056,15 +2433,16 @@ Adv END -->
                                     <!--item-->
                                     <div class="vid">
                                         <video src="assets/video/Hồ sơ Pandora phơi bày tài sản ngầm của giới siêu giàu _ VTV24.mp4" type="video/mp4" size="720" auroplay>
-                                                </video>
+                                        </video>
                                         <div class="title">
                                             <h5>Video 2</h5>
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
-                                                            <span class="ms-3"><a href="#" class="btn-link"><i class="far fa-comment-alt me-1"></i>
-                                                                            5</a></span>
+                                                            <span class="ms-3"><a href="#" class="btn-link"><i
+                                                                        class="far fa-comment-alt me-1"></i>
+                                                                    5</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -2075,15 +2453,16 @@ Adv END -->
                                     <!--item-->
                                     <div class="vid">
                                         <video src="assets/video/Hồ sơ Pandora phơi bày tài sản ngầm của giới siêu giàu _ VTV24.mp4" type="video/mp4" size="720" auroplay>
-                                                </video>
+                                        </video>
                                         <div class="title">
                                             <h5>Video 3</h5>
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
-                                                            <span class="ms-3"><a href="#" class="btn-link"><i class="far fa-comment-alt me-1"></i>
-                                                                            5</a></span>
+                                                            <span class="ms-3"><a href="#" class="btn-link"><i
+                                                                        class="far fa-comment-alt me-1"></i>
+                                                                    5</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -2094,15 +2473,16 @@ Adv END -->
                                     <!--item-->
                                     <div class="vid">
                                         <video src="assets/video/Hồ sơ Pandora phơi bày tài sản ngầm của giới siêu giàu _ VTV24.mp4" type="video/mp4" size="720" auroplay>
-                                                </video>
+                                        </video>
                                         <div class="title">
                                             <h5>Video 4</h5>
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
-                                                            <span class="ms-3"><a href="#" class="btn-link"><i class="far fa-comment-alt me-1"></i>
-                                                                            5</a></span>
+                                                            <span class="ms-3"><a href="#" class="btn-link"><i
+                                                                        class="far fa-comment-alt me-1"></i>
+                                                                    5</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -2113,15 +2493,16 @@ Adv END -->
                                     <!--item-->
                                     <div class="vid">
                                         <video src="assets/video/Hồ sơ Pandora phơi bày tài sản ngầm của giới siêu giàu _ VTV24.mp4" type="video/mp4" size="720" auroplay>
-                                                </video>
+                                        </video>
                                         <div class="title">
                                             <h5>Video 5</h5>
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
-                                                            <span class="ms-3"><a href="#" class="btn-link"><i class="far fa-comment-alt me-1"></i>
-                                                                            5</a></span>
+                                                            <span class="ms-3"><a href="#" class="btn-link"><i
+                                                                        class="far fa-comment-alt me-1"></i>
+                                                                    5</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -2132,15 +2513,16 @@ Adv END -->
                                     <!--item-->
                                     <div class="vid">
                                         <video src="assets/video/Hồ sơ Pandora phơi bày tài sản ngầm của giới siêu giàu _ VTV24.mp4" type="video/mp4" size="720" auroplay>
-                                                </video>
+                                        </video>
                                         <div class="title">
                                             <h5>Video 6</h5>
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
-                                                            <span class="ms-3"><a href="#" class="btn-link"><i class="far fa-comment-alt me-1"></i>
-                                                                            5</a></span>
+                                                            <span class="ms-3"><a href="#" class="btn-link"><i
+                                                                        class="far fa-comment-alt me-1"></i>
+                                                                    5</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -2151,15 +2533,16 @@ Adv END -->
                                     <!--item-->
                                     <div class="vid">
                                         <video src="assets/video/Hồ sơ Pandora phơi bày tài sản ngầm của giới siêu giàu _ VTV24.mp4" type="video/mp4" size="720" auroplay>
-                                                </video>
+                                        </video>
                                         <div class="title">
                                             <h5>Video 7</h5>
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
-                                                            <span class="ms-3"><a href="#" class="btn-link"><i class="far fa-comment-alt me-1"></i>
-                                                                            5</a></span>
+                                                            <span class="ms-3"><a href="#" class="btn-link"><i
+                                                                        class="far fa-comment-alt me-1"></i>
+                                                                    5</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -2170,15 +2553,16 @@ Adv END -->
                                     <!--item-->
                                     <div class="vid">
                                         <video src="assets/video/Hồ sơ Pandora phơi bày tài sản ngầm của giới siêu giàu _ VTV24.mp4" type="video/mp4" size="720" auroplay>
-                                                </video>
+                                        </video>
                                         <div class="title">
                                             <h5>Video 8</h5>
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
-                                                            <span class="ms-3"><a href="#" class="btn-link"><i class="far fa-comment-alt me-1"></i>
-                                                                            5</a></span>
+                                                            <span class="ms-3"><a href="#" class="btn-link"><i
+                                                                        class="far fa-comment-alt me-1"></i>
+                                                                    5</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -2189,15 +2573,16 @@ Adv END -->
                                     <!--item-->
                                     <div class="vid">
                                         <video src="assets/video/Hồ sơ Pandora phơi bày tài sản ngầm của giới siêu giàu _ VTV24.mp4" type="video/mp4" size="720" muted>
-                                                </video>
+                                        </video>
                                         <div class="title">
                                             <h5>Video 9</h5>
                                             <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
-                                                            <span class="ms-3"><a href="#" class="btn-link"><i class="far fa-comment-alt me-1"></i>
-                                                                            5</a></span>
+                                                            <span class="ms-3"><a href="#" class="btn-link"><i
+                                                                        class="far fa-comment-alt me-1"></i>
+                                                                    5</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -2208,15 +2593,16 @@ Adv END -->
                                     <!--item-->
                                     <div class="vid">
                                         <video src="assets/video/Hồ sơ Pandora phơi bày tài sản ngầm của giới siêu giàu _ VTV24.mp4" type="video/mp4" size="720" muted>
-                                                </video>
+                                        </video>
                                         <div class="title">
                                             <h5>Video 10</h5>
                                             <ul class="nav nav-divider align-items-start d-sm-inline-block">
                                                 <li class="nav-item">
                                                     <div class="nav-link">
                                                         <div class="d-flex align-items-center position-relative">
-                                                            <span class="ms-3"><a href="#" class="btn-link"><i class="far fa-comment-alt me-1"></i>
-                                                                            5</a></span>
+                                                            <span class="ms-3"><a href="#" class="btn-link"><i
+                                                                        class="far fa-comment-alt me-1"></i>
+                                                                    5</a></span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -2246,7 +2632,9 @@ Adv END -->
                         <!-- Title -->
                         <div class="mb-4 d-md-flex justify-content-between align-items-center">
                             <div class="title-box-category">
-                                <h3 class="parent-cate"> <a href="categorys-bussiness-ads.html" class="inner-title"><i class="bi bi-badge-ad me-2" aria-hidden="true"></i>Doanh nghiệp viết</a></h3>
+                                <h3 class="parent-cate"> <a href="categorys-bussiness-ads.html" class="inner-title"><i
+                                            class="bi bi-badge-ad me-2" aria-hidden="true"></i>Doanh nghiệp viết</a>
+                                </h3>
                             </div>
                             <a href="#" class="text-body small"><u>Content by: Startoday</u></a>
                         </div>
@@ -2270,21 +2658,22 @@ Adv END -->
                                             <!-- Card overlay bottom -->
                                             <div class="w-100 mt-auto">
                                                 <a href="#" class="badge bg-info mb-2"><i
-														class="fas fa-circle me-2 small fw-bold"></i>Bussiness</a>
+                                                        class="fas fa-circle me-2 small fw-bold"></i>Bussiness</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-body px-0 pt-3">
                                         <h5 class="card-title"><a href="post-single-3.html" class="btn-link text-reset fw-bold">Trang sức
-												Bảo Tín Minh Châu cho ngày 'Doanh nhân Việt Nam'</a></h5>
+                                                Bảo Tín Minh Châu cho ngày 'Doanh nhân Việt Nam'</a></h5>
                                         <!-- Card info -->
                                         <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                             <li class="nav-item">
                                                 <div class="nav-link">
                                                     <div class="d-flex align-items-center position-relative">
                                                         <i class="far fa-comment-alt"></i>
-                                                        <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																luận</a></span>
+                                                        <span class="ms-3">5 <a href="#"
+                                                                class="stretched-link text-reset btn-link">Bình
+                                                                luận</a></span>
                                                     </div>
                                                 </div>
                                             </li>
@@ -2302,21 +2691,22 @@ Adv END -->
                                             <!-- Card overlay bottom -->
                                             <div class="w-100 mt-auto">
                                                 <a href="#" class="badge bg-danger mb-2"><i
-														class="fas fa-circle me-2 small fw-bold"></i>Insurance</a>
+                                                        class="fas fa-circle me-2 small fw-bold"></i>Insurance</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-body px-0 pt-3">
                                         <h5 class="card-title"><a href="post-single-3.html" class="btn-link text-reset fw-bold">Generali ra
-												mắt bảo hiểm tai nạn trực tuyến</a></h5>
+                                                mắt bảo hiểm tai nạn trực tuyến</a></h5>
                                         <!-- Card info -->
                                         <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                             <li class="nav-item">
                                                 <div class="nav-link">
                                                     <div class="d-flex align-items-center position-relative">
                                                         <i class="far fa-comment-alt"></i>
-                                                        <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																luận</a></span>
+                                                        <span class="ms-3">5 <a href="#"
+                                                                class="stretched-link text-reset btn-link">Bình
+                                                                luận</a></span>
                                                     </div>
                                                 </div>
                                             </li>
@@ -2334,22 +2724,23 @@ Adv END -->
                                             <!-- Card overlay bottom -->
                                             <div class="w-100 mt-auto">
                                                 <a href="#" class="badge bg-success mb-2"><i
-														class="fas fa-circle me-2 small fw-bold"></i>Bike</a>
+                                                        class="fas fa-circle me-2 small fw-bold"></i>Bike</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-body px-0 pt-3">
                                         <h5 class="card-title"><a href="post-single-3.html" class="btn-link text-reset fw-bold">Ba mẫu xe
-												dành cho học sinh của DKBike
-											</a></h5>
+                                                dành cho học sinh của DKBike
+                                            </a></h5>
                                         <!-- Card info -->
                                         <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                             <li class="nav-item">
                                                 <div class="nav-link">
                                                     <div class="d-flex align-items-center position-relative">
                                                         <i class="far fa-comment-alt"></i>
-                                                        <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																luận</a></span>
+                                                        <span class="ms-3">5 <a href="#"
+                                                                class="stretched-link text-reset btn-link">Bình
+                                                                luận</a></span>
                                                     </div>
                                                 </div>
                                             </li>
@@ -2374,22 +2765,23 @@ Adv END -->
                                             <!-- Card overlay bottom -->
                                             <div class="w-100 mt-auto">
                                                 <a href="#" class="badge bg-primary mb-2"><i
-														class="fas fa-circle me-2 small fw-bold"></i>Foods</a>
+                                                        class="fas fa-circle me-2 small fw-bold"></i>Foods</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-body px-0 pt-3">
                                         <h5 class="card-title"><a href="post-single-3.html" class="btn-link text-reset fw-bold">Nước chấm 3
-												Miền khởi động cuộc thi “Tay nấu yêu thương” mùa 2
-											</a></h5>
+                                                Miền khởi động cuộc thi “Tay nấu yêu thương” mùa 2
+                                            </a></h5>
                                         <!-- Card info -->
                                         <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                             <li class="nav-item">
                                                 <div class="nav-link">
                                                     <div class="d-flex align-items-center position-relative">
                                                         <i class="far fa-comment-alt"></i>
-                                                        <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																luận</a></span>
+                                                        <span class="ms-3">5 <a href="#"
+                                                                class="stretched-link text-reset btn-link">Bình
+                                                                luận</a></span>
                                                     </div>
                                                 </div>
                                             </li>
@@ -2406,22 +2798,24 @@ Adv END -->
                                         <div class="card-img-overlay d-flex align-items-start flex-column p-3">
                                             <!-- Card overlay bottom -->
                                             <div class="w-100 mt-auto">
-                                                <a href="#" class="badge bg-warning mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>Bất
-													động sản</a>
+                                                <a href="#" class="badge bg-warning mb-2"><i
+                                                        class="fas fa-circle me-2 small fw-bold"></i>Bất
+                                                    động sản</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-body px-0 pt-3">
                                         <h5 class="card-title"><a href="post-single-3.html" class="btn-link text-reset fw-bold">Lợi thế kết
-												nối của khu villa biệt lập Regal Victoria</a></h5>
+                                                nối của khu villa biệt lập Regal Victoria</a></h5>
                                         <!-- Card info -->
                                         <ul class="nav nav-divider align-items-center d-sm-inline-block">
                                             <li class="nav-item">
                                                 <div class="nav-link">
                                                     <div class="d-flex align-items-center position-relative">
                                                         <i class="far fa-comment-alt"></i>
-                                                        <span class="ms-3">5 <a href="#" class="stretched-link text-reset btn-link">Bình
-																luận</a></span>
+                                                        <span class="ms-3">5 <a href="#"
+                                                                class="stretched-link text-reset btn-link">Bình
+                                                                luận</a></span>
                                                     </div>
                                                 </div>
                                             </li>
@@ -2455,26 +2849,33 @@ Footer START -->
                     <div class="row">
                         <div class="col-6 border-right border-left">
                             <ul class="nav flex-column">
-                                <li class="nav-item"><a class="nav-link pt-0" href="#"><i class="fa fa-home fa-fw me-2"></i>Trang
-										chủ</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-video fa-fw me-2"></i>Video</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-camera fa-fw me-2"></i>Ảnh</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-newspaper fa-fw me-2"></i>Mới
-										nhất</a></li>
+                                <li class="nav-item"><a class="nav-link pt-0" href="#"><i
+                                            class="fa fa-home fa-fw me-2"></i>Trang
+                                        chủ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"><i
+                                            class="fas fa-video fa-fw me-2"></i>Video</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"><i
+                                            class="fas fa-camera fa-fw me-2"></i>Ảnh</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"><i
+                                            class="far fa-newspaper fa-fw me-2"></i>Mới
+                                        nhất</a></li>
                             </ul>
                         </div>
                         <div class="col-6 border-right">
                             <ul class="nav flex-column">
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-eye fa-fw me-2"></i>Xem nhiều</a>
+                                <li class="nav-item"><a class="nav-link" href="#"><i
+                                            class="fas fa-eye fa-fw me-2"></i>Xem nhiều</a>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-fire fa-fw me-2"></i>Tin nóng</a>
+                                <li class="nav-item"><a class="nav-link" href="#"><i
+                                            class="fas fa-fire fa-fw me-2"></i>Tin nóng</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link pt-0" href="#"> <i class="fa fa-newspaper fa-fw me-2"></i>Thời sự
                                     </a>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-binoculars fa-fw me-2"></i>Góc
-										nhìn</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"><i
+                                            class="fas fa-binoculars fa-fw me-2"></i>Góc
+                                        nhìn</a></li>
 
                             </ul>
                         </div>
@@ -2484,26 +2885,34 @@ Footer START -->
                     <div class="row">
                         <div class="col-6 border-right">
                             <ul class="nav flex-column">
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-globe fa-fw me-2"></i>Thế giới</a>
+                                <li class="nav-item"><a class="nav-link" href="#"><i
+                                            class="fas fa-globe fa-fw me-2"></i>Thế giới</a>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-chart-bar fa-fw me-2"></i>Kinh
-										doanh</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-laugh fa-fw me-2"></i>Giải trí</a>
+                                <li class="nav-item"><a class="nav-link" href="#"><i
+                                            class="far fa-chart-bar fa-fw me-2"></i>Kinh
+                                        doanh</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"><i
+                                            class="fas fa-laugh fa-fw me-2"></i>Giải trí</a>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-vest-patches fa-fw me-2"></i>Thời
-										trang</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"><i
+                                            class="fas fa-vest-patches fa-fw me-2"></i>Thời
+                                        trang</a></li>
                             </ul>
                         </div>
                         <div class="col-6 border-right d-none d-sm-inline-block">
                             <ul class="nav flex-column">
-                                <li class="nav-item"><a class="nav-link pt-0" href="#"><i class="far fa-futbol fa-fw me-2"></i>Thể
-										thao</a></li>
-                                <li class="nav-item"><a class="nav-link pt-0" href="#"><i class="fa fa-user-tie fa-fw me-2"></i>Doanh
-										nhân</a></li>
-                                <li class="nav-item"><a class="nav-link pt-0" href="#"><i class="fa fa-user-tie fa-fw me-2"></i>Chính
-										khách</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-balance-scale fa-fw me-2"></i>Pháp
-										luật</a></li>
+                                <li class="nav-item"><a class="nav-link pt-0" href="#"><i
+                                            class="far fa-futbol fa-fw me-2"></i>Thể
+                                        thao</a></li>
+                                <li class="nav-item"><a class="nav-link pt-0" href="#"><i
+                                            class="fa fa-user-tie fa-fw me-2"></i>Doanh
+                                        nhân</a></li>
+                                <li class="nav-item"><a class="nav-link pt-0" href="#"><i
+                                            class="fa fa-user-tie fa-fw me-2"></i>Chính
+                                        khách</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"><i
+                                            class="fas fa-balance-scale fa-fw me-2"></i>Pháp
+                                        luật</a></li>
                         </div>
                     </div>
                 </div>
@@ -2513,24 +2922,29 @@ Footer START -->
                         <div class="col-6 border-right">
                             <ul class="nav flex-column">
                                 <li class="nav-item"><a class="nav-link" href="#"><i
-											class="bi bi-chat-square-quote-fill fa-fw me-2"></i> Tâm sự</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-heart fa-fw me-2"></i>Đời sống</a>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-suitcase-rolling fa-fw me-2"></i>Du
-										lịch</a></li>
+                                            class="bi bi-chat-square-quote-fill fa-fw me-2"></i> Tâm sự</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#"><i
-											class="fas fa-headphones-alt fa-fw me-2"></i>Podcasts</a></li>
+                                            class="fa fa-heart fa-fw me-2"></i>Đời sống</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="#"><i
+                                            class="fas fa-suitcase-rolling fa-fw me-2"></i>Du
+                                        lịch</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"><i
+                                            class="fas fa-headphones-alt fa-fw me-2"></i>Podcasts</a></li>
                             </ul>
                         </div>
                         <div class="col-6 border-right d-none d-sm-inline-block">
                             <ul class="nav flex-column">
                                 <li class="nav-item"><a class="nav-link pt-0" href="#"><i
-											class="fab fa-facebook fa-fw me-2"></i>Facebook</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-youtube fa-fw me-2"></i>YouTube</a>
+                                            class="fab fa-facebook fa-fw me-2"></i>Facebook</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"><i
+                                            class="fab fa-youtube fa-fw me-2"></i>YouTube</a>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-bell fa-fw me-2"></i>Thông báo</a>
+                                <li class="nav-item"><a class="nav-link" href="#"><i
+                                            class="far fa-bell fa-fw me-2"></i>Thông báo</a>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-envelope fa-fw me-2"></i>Phản hồi</a>
+                                <li class="nav-item"><a class="nav-link" href="#"><i
+                                            class="far fa-envelope fa-fw me-2"></i>Phản hồi</a>
                                 </li>
                             </ul>
                         </div>
@@ -2571,19 +2985,23 @@ Footer START -->
                 </div>
                 <div class="col-md-3 align-items-end">
                     <ul class="nav flex-column mb-3">
-                        <li class="nav-item"><a class="nav-link pt-0 pb-0" href="#"><i class="fas fa-ad fa-fw me-2"></i>Liên hệ
-								quảng cáo:</li>
-						<a href="" class="nav-link pt-0 pb-0"><i class="fa fa-phone-square fa-fw me-2"></i>0123456704</a>
+                        <li class="nav-item"><a class="nav-link pt-0 pb-0" href="#"><i
+                                    class="fas fa-ad fa-fw me-2"></i>Liên hệ
+                                quảng cáo:</li>
+                        <a href="" class="nav-link pt-0 pb-0"><i
+                                class="fa fa-phone-square fa-fw me-2"></i>0123456704</a>
                             <a href="" class="nav-link pt-0 pb-0"><i
-								class="fas fa-envelope fa-fw me-2"></i>ads.startoday@eurogroup.vn</a>
+                                class="fas fa-envelope fa-fw me-2"></i>ads.startoday@eurogroup.vn</a>
                     </ul>
                 </div>
                 <div class="col-md-3 align-items-end">
                     <ul class="nav flex-column mb-3">
-                        <li class="nav-item"><a class="nav-link pt-0 pb-0" href="#"><i class="fas fa-ad fa-fw me-2"></i>Vận hành
-								bởi: EuroGroup</li>
-						<a href="" class="nav-link pt-0 pb-0"><i class="fa fa-home fa-fw me-2"></i>Toà Euro Window 27-29 Trần Duy
-							Hưng, Trung Hoà, Cầu Giấy, Hà Nội</a>
+                        <li class="nav-item"><a class="nav-link pt-0 pb-0" href="#"><i
+                                    class="fas fa-ad fa-fw me-2"></i>Vận hành
+                                bởi: EuroGroup</li>
+                        <a href="" class="nav-link pt-0 pb-0"><i class="fa fa-home fa-fw me-2"></i>Toà Euro Window 27-29
+                            Trần Duy
+                            Hưng, Trung Hoà, Cầu Giấy, Hà Nội</a>
                 </div>
                 </ul>
             </div>
@@ -2623,8 +3041,8 @@ Cookies alert START -->
         </h6>
         <div class="d-flex mt-3 mt-lg-0 justify-content-center">
             <button type="button" class="btn btn-success-soft btn-sm mb-0 me-2" data-bs-dismiss="alert" aria-label="Close">
-				<span aria-hidden="true">Đồng ý</span>
-			</button>
+                <span aria-hidden="true">Đồng ý</span>
+            </button>
             <!-- <button type="button" class="btn btn-danger-soft btn-sm mb-0" data-bs-dismiss="alert" aria-label="Close">
 				<span aria-hidden="true">Decline</span>
 			</button> -->
@@ -2655,12 +3073,37 @@ JS libraries, plugins and custom scripts -->
         const player = new Plyr('#player');
     </script>
     <!-- <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script> -->
-
+    <script>
+        $(function() {
+            var n = function(n, t) {
+                    this.el = n || {};
+                    this.multiple = t || !1;
+                    var i = this.el.find(".menu-icon");
+                    i.on("click", {
+                        el: this.el,
+                        multiple: this.multiple
+                    }, this.dropdown)
+                },
+                t;
+            n.prototype.dropdown = function(n) {
+                var r = n.data.el,
+                    t = $(this),
+                    i = t.next();
+                i.slideToggle();
+                t.parent().toggleClass("menu-open")
+            };
+            t = new n($(".menu-list"), !1)
+        });
+    </script>
 
 
     <!-- Template Functions -->
     <script src="assets/js/functions.js"></script>
+    <script src="assets/js/dropmenu.js"></script>
 
+</body>
+
+</html>
 </body>
 
 </html>

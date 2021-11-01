@@ -330,7 +330,7 @@ p {
     margin-top: 0;
     margin-bottom: 1rem;
     color: #222222;
-    text-align: left;
+    /* text-align: left; */
 }
 
 abbr[title],
@@ -531,6 +531,7 @@ button,
 select,
 optgroup,
 textarea {
+    position: relative;
     margin: 0;
     font-family: inherit;
     font-size: inherit;
@@ -919,7 +920,7 @@ progress {
 .container-lg,
 .container-md,
 .container-sm {
-    width: 95%;
+    width: 97%;
     padding-right: 10px;
     padding-left: 10px;
     margin-right: auto;
@@ -16420,6 +16421,12 @@ button.text-primary-hover:hover {
     overflow-y: scroll;
 }
 
+@media (max-width: 576px) {
+    .video-list {
+        height: 200px;
+    }
+}
+
 .video-list::-webkit-scrollbar {
     width: 7px;
 }
@@ -16925,7 +16932,7 @@ svg.ic {
 }
 
 .nav_2 {
-    width: 157px;
+    width: 48%;
     margin-right: 4px;
     float: left;
 }
@@ -16936,6 +16943,7 @@ svg.ic {
     float: left;
     border-bottom: solid 1px #e5e5e5;
 }
+
 .menu-list:last-child {
     border-bottom: 0;
 }

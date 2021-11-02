@@ -52,6 +52,95 @@
         <!-- Close button -->
         <button type="button" class="btn-close btn-close-white opacity-9 p-3" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu">
+        <div class="offcanvas-header justify-content-end">
+            <div class="top-header-canvas">
+                <img class="light-mode-item logo-mobile" src="assets/images/logo.svg" alt="logo">
+                <img class="dark-mode-item my-3" src="assets/images/logo-light.svg" alt="logo">
+            </div>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="header-search">
+            <div class="nav mt-lg-0 flex-nowrap align-items-center">
+                <div class="nav-item w-100">
+                    <form class="rounded position-relative">
+                        <input class="form-control pe-5 bg-light" type="search" placeholder="Search the blog" aria-label="Search">
+                        <button class="btn bg-transparent px-2 py-0 position-absolute top-50 end-0 translate-middle-y" type="submit"><i class="bi bi-search fs-5"> </i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-body d-flex flex-column pt-0">
+            <div>
+                <!-- Nav START -->
+
+                <div class="navbar-canvas">
+                    <div class="nav_2">
+                        <div class="menu-list">
+                            <a href="" class="menu-title2" title="Tin nóng">Tin
+                                nóng</a>
+                        </div>
+                        <div class="menu-list">
+                            <a href="categories-thethao.html" class="menu-title2" title="Thể thao">Thể Thao</a>
+                        </div>
+                        <div class="menu-list">
+                            <a href="" class="menu-title2" title="Chính khách">Chính khách</a>
+                        </div>
+                        <div class="menu-list">
+                            <a href="" class="menu-title2" title="Doanh nhân">Doanh nhân</a>
+                        </div>
+                        <div class="menu-list">
+                            <a href="categories-giaitri.html" class="menu-title2" title="Giải trí">Giải trí</a>
+                        </div>
+                        <div class="menu-list">
+                            <a href="" class="menu-title2" title="Mạng Xã Hội">Mạng Xã Hội</a>
+                        </div>
+
+
+                    </div>
+                    <div class="nav_2">
+                        <div class="menu-list">
+                            <a href="" class="menu-title2" title="Âm nhạc">Âm Nhạc</a>
+                        </div>
+                        <div class="menu-list">
+                            <a href="" class="menu-title2" title="Điện ảnh">Điện Ảnh</a>
+                        </div>
+                        <div class="menu-list">
+                            <a href="" class="menu-title2" title="Du lịch">Du lịch</a>
+                        </div>
+                        <div class="menu-list">
+                            <a href="" class="menu-title2" title=" Video">Video</a>
+                        </div>
+                        <div class="menu-list">
+                            <a href="" class="menu-title2" title="Đời sống">Đời sống</a>
+                        </div>
+                        <div class="menu-list">
+                            <a href="" class="menu-title2" title="Ẩm thực">Ẩm thực</a>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="navbar-canvas">
+                    <ul class="ulfooter">
+                        <li><strong><a title="Tải ứng dụng" href="">Tải ứng dụng</a></strong></li>
+                        <li class="text-center">
+                            <a rel="noreferrer" href="" target="_blank" title="Ứng dụng Startoday trên PlayStore"><img class="img-app lazyload" alt="img-app" src="assets/images/google-play.svg" data-src="assets/images/google-play.svg"></a>
+                            <a rel="noreferrer" href="" target="_blank" title="Ứng dụng Startoday trên AppleStore"><img class="img-app lazyload" alt="img-app" src="assets/images/app-store.svg" data-src="assets/images/app-store.svg"></a>
+                        </li>
+                        <li><strong>Thông tin liên hệ</strong></li>
+                        <li><i class="fas fa-phone-alt img-add"></i> Điện thoại: </li>
+                        <li><i class="far fa-envelope img-add"></i> Email tòa soạn:</li>
+                        <li><i class="fab fa-adversal img-add"></i> Quảng cáo: </li>
+                    </ul>
+                </div>
+                <!-- Nav END -->
+
+            </div>
+
+        </div>
+    </div>
     <!-- Top alert END -->
     <!-- =======================
 Header START -->
@@ -102,115 +191,83 @@ Header START -->
         </div>
 
 
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <!-- Logo START -->
 
+
+                <!-- Responsive navbar toggler -->
+                <!-- Offcanvas menu toggler -->
+                <div class="nav-item">
+                    <a class="nav-link p-0" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu">
+                        <i class="fas fa-bars rtl-flip fs-2 offcanvas-none" data-bs-target="#offcanvasMenu"> </i>
+                    </a>
+                </div>
+                <!-- Logo START -->
+                <a class="navbar-brand" href="index.html">
+                    <img class="navbar-brand-item light-mode-item" src="assets/images/logo.svg" alt="logo">
+                    <img class="navbar-brand-item dark-mode-item" src="assets/images/logo-light.svg" alt="logo">
+                </a>
                 <!-- Logo END -->
 
-                <!-- Responsive navbar Canvas -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="text-body h6 d-none d-sm-inline-block"></span>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
                 <!-- Main navbar START -->
-                <a class="navbar-brand mx-0" href="index.html">
-                    <img class="navbar-brand-item light-mode-item" src="assets/images/logo.svg" alt="logo">
-                    <!-- <img class="navbar-brand-item dark-mode-item" src="assets/images/logo-light.svg" alt="logo"> -->
-                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav navbar-nav-scroll mx-auto">
 
-                <div class="offcanvas offcanvas-start-lg" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                    <div class="offcanvas-header justify-content-end">
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-header d-flex d-lg-none">
-                        <img class="light-mode-item" src="assets/images/logo.svg" alt="logo">
-                        <img class="dark-mode-item my-3" src="assets/images/logo-light.svg" alt="logo">
+                        <!-- Nav item 1 Demos -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" href="#" id="homeMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Trang chủ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="categories-thethao.html">Thể thao</a>
+                            <ul class="dropdown-menu">
+                                <!-- dropdown submenu -->
+                                <li><a class="dropdown-item" href="categories-livescore.html">Live Score</a> </li>
+                                <li> <a class="dropdown-item" href="categories-lichthidau.html">Lịch thi đấu</a> </li>
+                                <li> <a class="dropdown-item" href="categories-bang-xep-hang.html">Bảng Xếp Hạng</a> </li>
+                                <li> <a class="dropdown-item" href="categories-livescore.html">Kết quả</a> </li>
+                                <li> <a class="dropdown-item" href="">Ảnh</a> </li>
+                                <li> <a class="dropdown-item" href="">Tường Thuật</a> </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="categories-giaitri.html">Giải Trí</a>
+                            <ul class="dropdown-menu">
+                                <!-- dropdown submenu -->
+                                <li><a class="dropdown-item" href="">V-Biz</a> </li>
+                                <li> <a class="dropdown-item" href="">K-Biz</a> </li>
+                                <li> <a class="dropdown-item" href="">USUK</a> </li>
+                                <li> <a class="dropdown-item" href="">Paparazi</a> </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="">Chính khách</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="">Doanh Nhân</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="">Âm Nhạc</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="">Điện Ảnh</a></li>
 
-                        </a>
-                    </div>
-                    <div class="offcanvas-body p-lg-0">
-                        <ul class="navbar-nav navbar-nav-scroll mx-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="categories-dulich.html">Du lịch</a>
+                            <ul class="dropdown-menu">
+                                <!-- dropdown submenu -->
+                                <li><a class="dropdown-item" href="">Điểm đến</a> </li>
+                                <li> <a class="dropdown-item" href="">Dấu chân</a> </li>
+                                <li> <a class="dropdown-item" href="">Tư vấn</a> </li>
+                                <li> <a class="dropdown-item" href="">Safe Go</a> </li>
+                                <li> <a class="dropdown-item" href="">Ảnh</a> </li>
+                                <li> <a class="dropdown-item" href="">Ăn và Chơi</a> </li>
+                            </ul>
+                        </li>
 
-                            <!-- Nav item 1 -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-
-                            <!-- Nav item 2 -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="categories-thethao.html">Thể thao</a>
-                                <ul class="dropdown-menu">
-                                    <!-- dropdown submenu -->
-                                    <li><a class="dropdown-item" href="categories-thethao.html">Bóng đá</a> </li>
-                                    <li> <a class="dropdown-item" href="categories-thethao.html">Lịch thi đấu</a> </li>
-                                    <li> <a class="dropdown-item" href="post-list.html">Tường thuật</a> </li>
-                                    <li> <a class="dropdown-item" href="post-list-2.html">Bundesliga</a> </li>
-                                    <li> <a class="dropdown-item" href="post-cards.html">Champion League</a> </li>
-                                    <li> <a class="dropdown-item" href="post-overlay.html">LaLiga</a> </li>
-                                    <li class="dropdown-divider"></li>
-                                    <li class="dropdown-submenu dropend">
-                                        <a class="dropdown-item dropdown-toggle" href="#">Môn thể thao khác</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <!-- Nav item 3 -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="categorises-giaitri.html">Giải trí</a>
-                                <ul class="dropdown-menu" aria-labelledby="postMenu">
-                                    <!-- dropdown submenu -->
-                                    <li> <a class="dropdown-item" href="post-list.html">Sao</a> </li>
-                                    <li> <a class="dropdown-item" href="post-list.html">Video</a> </li>
-                                    <li> <a class="dropdown-item" href="post-list-2.html">Phim</a> </li>
-                                    <li> <a class="dropdown-item" href="post-cards.html">Nhạc</a> </li>
-                                    <li> <a class="dropdown-item" href="post-overlay.html">Thời trang</a> </li>
-                                    <li> <a class="dropdown-item" href="post-overlay.html">Làm đẹp</a> </li>
-                                </ul>
-                            </li>
-
-                            <!-- Nav item 4 -->
-                            <li class="nav-item dropdown dropdown-fullwidth">
-                                <a class="nav-link" href="#">Doanh nhân</a>
-                            </li>
-
-                            <!-- Nav item 5 -->
-                            <li class="nav-item dropdown dropdown-fullwidth">
-                                <a class="nav-link" href="#">Chính khách</a>
-                            </li>
-
-                            <!-- Nav item 6 -->
-                            <li class="nav-item dropdown dropdown-fullwidth">
-                                <a class="nav-link" href="#">Du lịch</a>
-                            </li>
-
-                            <!-- Nav item 7 -->
-                            <li class="nav-item dropdown dropdown-fullwidth">
-                                <a class="nav-link" href="#">Video</a>
-                            </li>
-
-                            <!-- Nav item 8 -->
-                            <li class="nav-item dropdown dropdown-fullwidth">
-                                <a class="nav-link" href="#">Đời sống</a>
-                            </li>
-
-                            <!-- Nav item 9 -->
-                            <li class="nav-item dropdown dropdown-fullwidth">
-                                <a class="nav-link" href="#">Ẩm thực</a>
-                            </li>
-                        </ul>
-                    </div>
+                    </ul>
                 </div>
-
                 <!-- Main navbar END -->
 
                 <!-- Nav right START -->
-                <div class="nav flex-nowrap align-items-end">
+                <div class="nav flex-nowrap align-items-center">
                     <!-- Nav Button -->
                     <div class="nav-item mx-0">
                         <a href="login.html" class="nav-link btn btn-sm mb-0 mx-0"><i class="fa fa-user fs-5"></i></a>
                     </div>
+                    <!-- Nav Search -->
                     <!-- Nav Search -->
                     <div class="nav-item dropdown dropdown-toggle-icon-none nav-search d-none d-md-block">
                         <a class="nav-link dropdown-toggle" role="button" href="#" id="navSearch" data-bs-toggle="dropdown" aria-expanded="false">
@@ -222,11 +279,10 @@ Header START -->
                                 <button class="btn bg-transparent px-2 py-0 position-absolute top-50 end-0 translate-middle-y" type="submit"><i class="bi bi-search fs-5"> </i></button>
                             </form>
                         </div>
-                    </div>
-                </div>
-                <!-- Nav right END -->
 
-            </div>
+                    </div>
+                    <!-- Nav right END -->
+                </div>
         </nav>
         <!-- Logo Nav END -->
     </header>

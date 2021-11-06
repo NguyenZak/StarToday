@@ -23,7 +23,6 @@ Table Of Content
 12 GLIGHTBOX
 13 ISOTOPE
 14 DARK MODE
-15 MODAL
 ====================== */
 
 "use strict";
